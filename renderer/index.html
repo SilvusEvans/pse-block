@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pseudocode → .sb3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span data-i18n="app.title">Pseudocode → .sb3</span> <span class="studio">SilvusEvans</span></div>
+    <div class="toolbar">
+      <select id="lang-select" class="lang-select" data-i18n-title="lang.label" title="Language"></select>
+      <button id="btn-example" data-i18n="btn.example">Examples</button>
+      <button id="btn-open" data-i18n="btn.open">Open…</button>
+      <button id="btn-save" data-i18n="btn.save">Save</button>
+      <button id="btn-media" data-i18n="btn.media" data-i18n-title="btn.media.title">Insert media…</button>
+      <button id="btn-compile" class="primary" data-i18n="btn.compile">Check (Ctrl+B)</button>
+      <button id="btn-export" class="accent" data-i18n="btn.export">Export .sb3 (Ctrl+E)</button>
+    </div>
+    <div class="file" id="file-label">untitled.pseudo</div>
+  </header>
+
+  <main>
+    <section class="editor-pane">
+      <div class="gutter" id="gutter">1</div>
+      <textarea id="code" spellcheck="false" wrap="off"></textarea>
+    </section>
+
+    <aside class="result-pane">
+      <h2><span data-i18n="panel.result">Result</span> <span id="status-badge" class="badge">Not compiled</span></h2>
+      <div id="fatal" class="fatal" hidden></div>
+      <h3><span data-i18n="panel.problems">Structural issues</span> <span class="count" id="problem-count">0</span></h3>
+      <ul id="problems" class="list"></ul>
+      <h3><span data-i18n="panel.warnings">Warnings</span> <span class="count" id="warning-count">0</span></h3>
+      <ul id="warnings" class="list"></ul>
+      <h3 data-i18n="panel.stats">Statistics</h3>
+      <div id="stats" class="stats"></div>
+      <details class="ref">
+        <summary data-i18n="ref.syntax">Syntax cheat sheet</summary>
+        <pre id="syntax-pre"></pre>
+        <p class="hint" id="syntax-hint"></p>
+      </details>
+      <details class="ref" id="vocab">
+        <summary><span data-i18n="ref.vocab">Block alias table</span> (<span id="vocab-count">Loading…</span> <span data-i18n="ref.vocab.unit">entries</span>)</summary>
+        <input id="vocab-filter" type="search" data-i18n-placeholder="vocab.filter" placeholder="Filter: alias / English / opcode / menu option" autocomplete="off">
+        <div class="vocab-wrap"><table class="vocab" id="vocab-table"></table></div>
+      </details>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

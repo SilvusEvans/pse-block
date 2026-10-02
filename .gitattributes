@@ -1,0 +1,13 @@
+# Normalise all text files to LF in the repository, whatever the working copy uses.
+* text=auto eol=lf
+
+# Explicitly binary — never let git touch these
+*.png binary
+*.wav binary
+*.tgz binary
+*.exe binary
+*.zip binary
+*.ico binary
+
+# Vendored third-party sources under .ref/ are kept as they were published
+.ref/** -text

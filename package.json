@@ -1,0 +1,55 @@
+{
+  "name": "pseudo2sb3",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "伪代码 → Scratch .sb3 编译器 with an Electron front end (SilvusEvans); UI + pseudocode in 简体中文 / 繁體中文 / English / 日本語",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "compile": "node src/cli.js",
+    "test": "node --test \"test/*.test.mjs\"",
+    "smoke": "electron test/electron-smoke.cjs",
+    "extract-catalog": "node scripts/extract-catalog.mjs",
+    "extract-extensions": "node scripts/extract-extensions.mjs",
+    "check-catalog": "node scripts/check-catalog.mjs",
+    "demo-assets": "node scripts/make-demo-assets.mjs",
+    "regen": "npm run extract-catalog && npm run extract-extensions && npm run check-catalog && npm test",
+    "dist": "electron-builder --win portable"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^26.15.3",
+    "scratch-parser": "^6.0.1",
+    "scratch-vm": "^5.0.300"
+  },
+  "build": {
+    "appId": "com.silvusevans.pseudo2sb3",
+    "productName": "pseudo2sb3",
+    "asar": false,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "renderer/**/*",
+      "src/**/*",
+      "examples/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "pseudo2sb3-${version}-portable.exe"
+    }
+  }
+}

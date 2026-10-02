@@ -1,0 +1,1825 @@
+{
+ "note": "由 scripts/extract-extensions.mjs 生成，请勿手改",
+ "extensions": {
+  "boost": {
+   "url": null,
+   "builtin": true
+  },
+  "ev3": {
+   "url": null,
+   "builtin": true
+  },
+  "gdxfor": {
+   "url": null,
+   "builtin": true
+  },
+  "makeymakey": {
+   "url": null,
+   "builtin": true
+  },
+  "microbit": {
+   "url": null,
+   "builtin": true
+  },
+  "music": {
+   "url": null,
+   "builtin": true
+  },
+  "pen": {
+   "url": null,
+   "builtin": true
+  },
+  "speech2text": {
+   "url": null,
+   "builtin": false
+  },
+  "text2speech": {
+   "url": null,
+   "builtin": true
+  },
+  "translate": {
+   "url": null,
+   "builtin": true
+  },
+  "videoSensing": {
+   "url": null,
+   "builtin": true
+  },
+  "wedo2": {
+   "url": null,
+   "builtin": true
+  },
+  "stretch": {
+   "url": "https://extensions.turbowarp.org/stretch.js",
+   "builtin": false
+  }
+ },
+ "menus": {
+  "music": {
+   "DRUM": [
+    {
+     "value": "1",
+     "id": "music.drumSnare",
+     "en": "(1) Snare Drum",
+     "zh": "(1) 小军鼓"
+    },
+    {
+     "value": "2",
+     "id": "music.drumBass",
+     "en": "(2) Bass Drum",
+     "zh": "(2) 低音鼓"
+    },
+    {
+     "value": "3",
+     "id": "music.drumSideStick",
+     "en": "(3) Side Stick",
+     "zh": "(3) 敲鼓边"
+    },
+    {
+     "value": "4",
+     "id": "music.drumCrashCymbal",
+     "en": "(4) Crash Cymbal",
+     "zh": "(4) 碎音钹"
+    },
+    {
+     "value": "5",
+     "id": "music.drumOpenHiHat",
+     "en": "(5) Open Hi-Hat",
+     "zh": "(5) 开击踩镲"
+    },
+    {
+     "value": "6",
+     "id": "music.drumClosedHiHat",
+     "en": "(6) Closed Hi-Hat",
+     "zh": "(6) 闭击踩镲"
+    },
+    {
+     "value": "7",
+     "id": "music.drumTambourine",
+     "en": "(7) Tambourine",
+     "zh": "(7) 铃鼓"
+    },
+    {
+     "value": "8",
+     "id": "music.drumHandClap",
+     "en": "(8) Hand Clap",
+     "zh": "(8) 手掌"
+    },
+    {
+     "value": "9",
+     "id": "music.drumClaves",
+     "en": "(9) Claves",
+     "zh": "(9) 音棒"
+    },
+    {
+     "value": "10",
+     "id": "music.drumWoodBlock",
+     "en": "(10) Wood Block",
+     "zh": "(10) 木鱼"
+    },
+    {
+     "value": "11",
+     "id": "music.drumCowbell",
+     "en": "(11) Cowbell",
+     "zh": "(11) 牛铃"
+    },
+    {
+     "value": "12",
+     "id": "music.drumTriangle",
+     "en": "(12) Triangle",
+     "zh": "(12) 三角铁"
+    },
+    {
+     "value": "13",
+     "id": "music.drumBongo",
+     "en": "(13) Bongo",
+     "zh": "(13) 邦戈鼓"
+    },
+    {
+     "value": "14",
+     "id": "music.drumConga",
+     "en": "(14) Conga",
+     "zh": "(14) 康加鼓"
+    },
+    {
+     "value": "15",
+     "id": "music.drumCabasa",
+     "en": "(15) Cabasa",
+     "zh": "(15) 卡巴萨"
+    },
+    {
+     "value": "16",
+     "id": "music.drumGuiro",
+     "en": "(16) Guiro",
+     "zh": "(16) 刮瓜"
+    },
+    {
+     "value": "17",
+     "id": "music.drumVibraslap",
+     "en": "(17) Vibraslap",
+     "zh": "(17) 颤音器"
+    },
+    {
+     "value": "18",
+     "id": "music.drumCuica",
+     "en": "(18) Cuica",
+     "zh": "(18) 锯加鼓"
+    }
+   ],
+   "INSTRUMENT": [
+    {
+     "value": "1",
+     "id": "music.instrumentPiano",
+     "en": "(1) Piano",
+     "zh": "(1) 钢琴"
+    },
+    {
+     "value": "2",
+     "id": "music.instrumentElectricPiano",
+     "en": "(2) Electric Piano",
+     "zh": "(2) 电钢琴"
+    },
+    {
+     "value": "3",
+     "id": "music.instrumentOrgan",
+     "en": "(3) Organ",
+     "zh": "(3) 风琴"
+    },
+    {
+     "value": "4",
+     "id": "music.instrumentGuitar",
+     "en": "(4) Guitar",
+     "zh": "(4) 吉他"
+    },
+    {
+     "value": "5",
+     "id": "music.instrumentElectricGuitar",
+     "en": "(5) Electric Guitar",
+     "zh": "(5) 电吉他"
+    },
+    {
+     "value": "6",
+     "id": "music.instrumentBass",
+     "en": "(6) Bass",
+     "zh": "(6) 贝斯"
+    },
+    {
+     "value": "7",
+     "id": "music.instrumentPizzicato",
+     "en": "(7) Pizzicato",
+     "zh": "(7) 拨弦"
+    },
+    {
+     "value": "8",
+     "id": "music.instrumentCello",
+     "en": "(8) Cello",
+     "zh": "(8) 大提琴"
+    },
+    {
+     "value": "9",
+     "id": "music.instrumentTrombone",
+     "en": "(9) Trombone",
+     "zh": "(9) 长号"
+    },
+    {
+     "value": "10",
+     "id": "music.instrumentClarinet",
+     "en": "(10) Clarinet",
+     "zh": "(10) 单簧管"
+    },
+    {
+     "value": "11",
+     "id": "music.instrumentSaxophone",
+     "en": "(11) Saxophone",
+     "zh": "(11) 萨克斯管"
+    },
+    {
+     "value": "12",
+     "id": "music.instrumentFlute",
+     "en": "(12) Flute",
+     "zh": "(12) 长笛"
+    },
+    {
+     "value": "13",
+     "id": "music.instrumentWoodenFlute",
+     "en": "(13) Wooden Flute",
+     "zh": "(13) 木长笛"
+    },
+    {
+     "value": "14",
+     "id": "music.instrumentBassoon",
+     "en": "(14) Bassoon",
+     "zh": "(14) 巴松管"
+    },
+    {
+     "value": "15",
+     "id": "music.instrumentChoir",
+     "en": "(15) Choir",
+     "zh": "(15) 唱诗班"
+    },
+    {
+     "value": "16",
+     "id": "music.instrumentVibraphone",
+     "en": "(16) Vibraphone",
+     "zh": "(16) 颤音琴"
+    },
+    {
+     "value": "17",
+     "id": "music.instrumentMusicBox",
+     "en": "(17) Music Box",
+     "zh": "(17) 八音盒"
+    },
+    {
+     "value": "18",
+     "id": "music.instrumentSteelDrum",
+     "en": "(18) Steel Drum",
+     "zh": "(18) 钢鼓"
+    },
+    {
+     "value": "19",
+     "id": "music.instrumentMarimba",
+     "en": "(19) Marimba",
+     "zh": "(19) 马林巴琴"
+    },
+    {
+     "value": "20",
+     "id": "music.instrumentSynthLead",
+     "en": "(20) Synth Lead",
+     "zh": "(20) 合成主音"
+    },
+    {
+     "value": "21",
+     "id": "music.instrumentSynthPad",
+     "en": "(21) Synth Pad",
+     "zh": "(21) 合成柔音"
+    }
+   ]
+  },
+  "videoSensing": {
+   "ATTRIBUTE": [
+    {
+     "value": "1",
+     "id": "videoSensing.motion",
+     "en": "motion",
+     "zh": "运动"
+    },
+    {
+     "value": "2",
+     "id": "videoSensing.direction",
+     "en": "direction",
+     "zh": "方向"
+    }
+   ],
+   "SUBJECT": [
+    {
+     "value": "1",
+     "id": "videoSensing.sprite",
+     "en": "sprite",
+     "zh": "角色"
+    },
+    {
+     "value": "2",
+     "id": "videoSensing.stage",
+     "en": "stage",
+     "zh": "舞台"
+    }
+   ],
+   "VIDEO_STATE": [
+    {
+     "value": "1",
+     "id": "videoSensing.off",
+     "en": "off",
+     "zh": "关闭"
+    },
+    {
+     "value": "2",
+     "id": "videoSensing.on",
+     "en": "on",
+     "zh": "开启"
+    },
+    {
+     "value": "3",
+     "id": "videoSensing.onFlipped",
+     "en": "on flipped",
+     "zh": "镜像开启"
+    },
+    {
+     "value": "4",
+     "id": "videoSensing.categoryName",
+     "en": "Video Sensing",
+     "zh": "视频侦测"
+    },
+    {
+     "value": "5",
+     "id": "videoSensing.whenMotionGreaterThan",
+     "en": "when video motion > [REFERENCE]",
+     "zh": "当视频运动 > [REFERENCE]"
+    },
+    {
+     "value": "6",
+     "id": "videoSensing.videoOn",
+     "en": "video [ATTRIBUTE] on [SUBJECT]",
+     "zh": "相对于[SUBJECT]的视频[ATTRIBUTE]"
+    },
+    {
+     "value": "7",
+     "id": "videoSensing.videoToggle",
+     "en": "turn video [VIDEO_STATE]",
+     "zh": "[VIDEO_STATE]摄像头"
+    },
+    {
+     "value": "8",
+     "id": "videoSensing.setVideoTransparency",
+     "en": "set video transparency to [TRANSPARENCY]",
+     "zh": "将视频透明度设为[TRANSPARENCY]"
+    }
+   ]
+  }
+ },
+ "skippedMenus": {
+  "boost": 6,
+  "ev3": 2,
+  "gdxfor": 5,
+  "makeymakey": 2,
+  "microbit": 6,
+  "pen": 1,
+  "text2speech": 2,
+  "translate": 1,
+  "wedo2": 5
+ },
+ "blocks": {
+  "boost_motorOnFor": {
+   "ext": "boost",
+   "opcode": "boost_motorOnFor",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "boost_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    },
+    {
+     "name": "DURATION",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "turn motor [MOTOR_ID] for [DURATION] seconds"
+  },
+  "boost_motorOnForRotation": {
+   "ext": "boost",
+   "opcode": "boost_motorOnForRotation",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "boost_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    },
+    {
+     "name": "ROTATION",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "turn motor [MOTOR_ID] for [ROTATION] rotations"
+  },
+  "boost_motorOn": {
+   "ext": "boost",
+   "opcode": "boost_motorOn",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "boost_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    }
+   ],
+   "fields": [],
+   "text": "turn motor [MOTOR_ID] on"
+  },
+  "boost_motorOff": {
+   "ext": "boost",
+   "opcode": "boost_motorOff",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "boost_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    }
+   ],
+   "fields": [],
+   "text": "turn motor [MOTOR_ID] off"
+  },
+  "boost_setMotorPower": {
+   "ext": "boost",
+   "opcode": "boost_setMotorPower",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "boost_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    },
+    {
+     "name": "POWER",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set motor [MOTOR_ID] speed to [POWER] %"
+  },
+  "boost_setMotorDirection": {
+   "ext": "boost",
+   "opcode": "boost_setMotorDirection",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "boost_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    },
+    {
+     "name": "MOTOR_DIRECTION",
+     "type": "str",
+     "menu": "MOTOR_DIRECTION",
+     "shadow": "boost_menu_MOTOR_DIRECTION",
+     "shadowField": "MOTOR_DIRECTION"
+    }
+   ],
+   "fields": [],
+   "text": "set motor [MOTOR_ID] direction [MOTOR_DIRECTION]"
+  },
+  "boost_getMotorPosition": {
+   "ext": "boost",
+   "opcode": "boost_getMotorPosition",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "MOTOR_REPORTER_ID",
+     "type": "str",
+     "menu": "MOTOR_REPORTER_ID",
+     "shadow": "boost_menu_MOTOR_REPORTER_ID",
+     "shadowField": "MOTOR_REPORTER_ID"
+    }
+   ],
+   "fields": [],
+   "text": "motor [MOTOR_REPORTER_ID] position"
+  },
+  "boost_whenColor": {
+   "ext": "boost",
+   "opcode": "boost_whenColor",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "COLOR",
+     "type": "str",
+     "menu": "COLOR",
+     "shadow": "boost_menu_COLOR",
+     "shadowField": "COLOR"
+    }
+   ],
+   "fields": [],
+   "text": "when [COLOR] brick seen"
+  },
+  "boost_seeingColor": {
+   "ext": "boost",
+   "opcode": "boost_seeingColor",
+   "kind": "boolean",
+   "inputs": [
+    {
+     "name": "COLOR",
+     "type": "str",
+     "menu": "COLOR",
+     "shadow": "boost_menu_COLOR",
+     "shadowField": "COLOR"
+    }
+   ],
+   "fields": [],
+   "text": "seeing [COLOR] brick?"
+  },
+  "boost_whenTilted": {
+   "ext": "boost",
+   "opcode": "boost_whenTilted",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "TILT_DIRECTION_ANY",
+     "type": "str",
+     "menu": "TILT_DIRECTION_ANY",
+     "shadow": "boost_menu_TILT_DIRECTION_ANY",
+     "shadowField": "TILT_DIRECTION_ANY"
+    }
+   ],
+   "fields": [],
+   "text": "when tilted [TILT_DIRECTION_ANY]"
+  },
+  "boost_getTiltAngle": {
+   "ext": "boost",
+   "opcode": "boost_getTiltAngle",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "TILT_DIRECTION",
+     "type": "str",
+     "menu": "TILT_DIRECTION",
+     "shadow": "boost_menu_TILT_DIRECTION",
+     "shadowField": "TILT_DIRECTION"
+    }
+   ],
+   "fields": [],
+   "text": "tilt angle [TILT_DIRECTION]"
+  },
+  "boost_setLightHue": {
+   "ext": "boost",
+   "opcode": "boost_setLightHue",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "HUE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set light color to [HUE]"
+  },
+  "ev3_motorTurnClockwise": {
+   "ext": "ev3",
+   "opcode": "ev3_motorTurnClockwise",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "PORT",
+     "type": "str",
+     "menu": "motorPorts",
+     "shadow": "ev3_menu_motorPorts",
+     "shadowField": "motorPorts"
+    },
+    {
+     "name": "TIME",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "motor [PORT] turn this way for [TIME] seconds"
+  },
+  "ev3_motorTurnCounterClockwise": {
+   "ext": "ev3",
+   "opcode": "ev3_motorTurnCounterClockwise",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "PORT",
+     "type": "str",
+     "menu": "motorPorts",
+     "shadow": "ev3_menu_motorPorts",
+     "shadowField": "motorPorts"
+    },
+    {
+     "name": "TIME",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "motor [PORT] turn that way for [TIME] seconds"
+  },
+  "ev3_motorSetPower": {
+   "ext": "ev3",
+   "opcode": "ev3_motorSetPower",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "PORT",
+     "type": "str",
+     "menu": "motorPorts",
+     "shadow": "ev3_menu_motorPorts",
+     "shadowField": "motorPorts"
+    },
+    {
+     "name": "POWER",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "motor [PORT] set power [POWER] %"
+  },
+  "ev3_getMotorPosition": {
+   "ext": "ev3",
+   "opcode": "ev3_getMotorPosition",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "PORT",
+     "type": "str",
+     "menu": "motorPorts",
+     "shadow": "ev3_menu_motorPorts",
+     "shadowField": "motorPorts"
+    }
+   ],
+   "fields": [],
+   "text": "motor [PORT] position"
+  },
+  "ev3_whenButtonPressed": {
+   "ext": "ev3",
+   "opcode": "ev3_whenButtonPressed",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "PORT",
+     "type": "str",
+     "menu": "sensorPorts",
+     "shadow": "ev3_menu_sensorPorts",
+     "shadowField": "sensorPorts"
+    }
+   ],
+   "fields": [],
+   "text": "when button [PORT] pressed"
+  },
+  "ev3_whenDistanceLessThan": {
+   "ext": "ev3",
+   "opcode": "ev3_whenDistanceLessThan",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "DISTANCE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "when distance < [DISTANCE]"
+  },
+  "ev3_whenBrightnessLessThan": {
+   "ext": "ev3",
+   "opcode": "ev3_whenBrightnessLessThan",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "DISTANCE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "when brightness < [DISTANCE]"
+  },
+  "ev3_buttonPressed": {
+   "ext": "ev3",
+   "opcode": "ev3_buttonPressed",
+   "kind": "boolean",
+   "inputs": [
+    {
+     "name": "PORT",
+     "type": "str",
+     "menu": "sensorPorts",
+     "shadow": "ev3_menu_sensorPorts",
+     "shadowField": "sensorPorts"
+    }
+   ],
+   "fields": [],
+   "text": "button [PORT] pressed?"
+  },
+  "ev3_getDistance": {
+   "ext": "ev3",
+   "opcode": "ev3_getDistance",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "distance"
+  },
+  "ev3_getBrightness": {
+   "ext": "ev3",
+   "opcode": "ev3_getBrightness",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "brightness"
+  },
+  "ev3_beep": {
+   "ext": "ev3",
+   "opcode": "ev3_beep",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "NOTE",
+     "type": "any"
+    },
+    {
+     "name": "TIME",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "beep note [NOTE] for [TIME] secs"
+  },
+  "gdxfor_whenGesture": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_whenGesture",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "GESTURE",
+     "type": "str",
+     "menu": "gestureOptions",
+     "shadow": "gdxfor_menu_gestureOptions",
+     "shadowField": "gestureOptions"
+    }
+   ],
+   "fields": [],
+   "text": "when [GESTURE]"
+  },
+  "gdxfor_whenForcePushedOrPulled": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_whenForcePushedOrPulled",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "PUSH_PULL",
+     "type": "str",
+     "menu": "pushPullOptions",
+     "shadow": "gdxfor_menu_pushPullOptions",
+     "shadowField": "pushPullOptions"
+    }
+   ],
+   "fields": [],
+   "text": "when force sensor [PUSH_PULL]"
+  },
+  "gdxfor_getForce": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_getForce",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "force"
+  },
+  "gdxfor_whenTilted": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_whenTilted",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "TILT",
+     "type": "str",
+     "menu": "tiltAnyOptions",
+     "shadow": "gdxfor_menu_tiltAnyOptions",
+     "shadowField": "tiltAnyOptions"
+    }
+   ],
+   "fields": [],
+   "text": "when tilted [TILT]"
+  },
+  "gdxfor_isTilted": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_isTilted",
+   "kind": "boolean",
+   "inputs": [
+    {
+     "name": "TILT",
+     "type": "str",
+     "menu": "tiltAnyOptions",
+     "shadow": "gdxfor_menu_tiltAnyOptions",
+     "shadowField": "tiltAnyOptions"
+    }
+   ],
+   "fields": [],
+   "text": "tilted [TILT]?"
+  },
+  "gdxfor_getTilt": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_getTilt",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "TILT",
+     "type": "str",
+     "menu": "tiltOptions",
+     "shadow": "gdxfor_menu_tiltOptions",
+     "shadowField": "tiltOptions"
+    }
+   ],
+   "fields": [],
+   "text": "tilt angle [TILT]"
+  },
+  "gdxfor_isFreeFalling": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_isFreeFalling",
+   "kind": "boolean",
+   "inputs": [],
+   "fields": [],
+   "text": "falling?"
+  },
+  "gdxfor_getSpinSpeed": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_getSpinSpeed",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "DIRECTION",
+     "type": "str",
+     "menu": "axisOptions",
+     "shadow": "gdxfor_menu_axisOptions",
+     "shadowField": "axisOptions"
+    }
+   ],
+   "fields": [],
+   "text": "spin speed [DIRECTION]"
+  },
+  "gdxfor_getAcceleration": {
+   "ext": "gdxfor",
+   "opcode": "gdxfor_getAcceleration",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "DIRECTION",
+     "type": "str",
+     "menu": "axisOptions",
+     "shadow": "gdxfor_menu_axisOptions",
+     "shadowField": "axisOptions"
+    }
+   ],
+   "fields": [],
+   "text": "acceleration [DIRECTION]"
+  },
+  "makeymakey_whenMakeyKeyPressed": {
+   "ext": "makeymakey",
+   "opcode": "makeymakey_whenMakeyKeyPressed",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "KEY",
+     "type": "str",
+     "menu": "KEY",
+     "shadow": "makeymakey_menu_KEY",
+     "shadowField": "KEY"
+    }
+   ],
+   "fields": [],
+   "text": "when [KEY] key pressed"
+  },
+  "makeymakey_whenCodePressed": {
+   "ext": "makeymakey",
+   "opcode": "makeymakey_whenCodePressed",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "SEQUENCE",
+     "type": "str",
+     "menu": "SEQUENCE",
+     "shadow": "makeymakey_menu_SEQUENCE",
+     "shadowField": "SEQUENCE"
+    }
+   ],
+   "fields": [],
+   "text": "when [SEQUENCE] pressed in order"
+  },
+  "microbit_whenButtonPressed": {
+   "ext": "microbit",
+   "opcode": "microbit_whenButtonPressed",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "BTN",
+     "type": "str",
+     "menu": "buttons",
+     "shadow": "microbit_menu_buttons",
+     "shadowField": "buttons"
+    }
+   ],
+   "fields": [],
+   "text": "when [BTN] button pressed"
+  },
+  "microbit_isButtonPressed": {
+   "ext": "microbit",
+   "opcode": "microbit_isButtonPressed",
+   "kind": "boolean",
+   "inputs": [
+    {
+     "name": "BTN",
+     "type": "str",
+     "menu": "buttons",
+     "shadow": "microbit_menu_buttons",
+     "shadowField": "buttons"
+    }
+   ],
+   "fields": [],
+   "text": "[BTN] button pressed?"
+  },
+  "microbit_whenGesture": {
+   "ext": "microbit",
+   "opcode": "microbit_whenGesture",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "GESTURE",
+     "type": "str",
+     "menu": "gestures",
+     "shadow": "microbit_menu_gestures",
+     "shadowField": "gestures"
+    }
+   ],
+   "fields": [],
+   "text": "when [GESTURE]"
+  },
+  "microbit_displaySymbol": {
+   "ext": "microbit",
+   "opcode": "microbit_displaySymbol",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MATRIX",
+     "type": "any"
+    }
+   ],
+   "fields": [],
+   "text": "display [MATRIX]"
+  },
+  "microbit_displayText": {
+   "ext": "microbit",
+   "opcode": "microbit_displayText",
+   "kind": "statement",
+   "inputs": [],
+   "fields": [],
+   "text": "display text [TEXT]"
+  },
+  "microbit_displayClear": {
+   "ext": "microbit",
+   "opcode": "microbit_displayClear",
+   "kind": "statement",
+   "inputs": [],
+   "fields": [],
+   "text": "clear display"
+  },
+  "microbit_whenTilted": {
+   "ext": "microbit",
+   "opcode": "microbit_whenTilted",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "DIRECTION",
+     "type": "str",
+     "menu": "tiltDirectionAny",
+     "shadow": "microbit_menu_tiltDirectionAny",
+     "shadowField": "tiltDirectionAny"
+    }
+   ],
+   "fields": [],
+   "text": "when tilted [DIRECTION]"
+  },
+  "microbit_isTilted": {
+   "ext": "microbit",
+   "opcode": "microbit_isTilted",
+   "kind": "boolean",
+   "inputs": [
+    {
+     "name": "DIRECTION",
+     "type": "str",
+     "menu": "tiltDirectionAny",
+     "shadow": "microbit_menu_tiltDirectionAny",
+     "shadowField": "tiltDirectionAny"
+    }
+   ],
+   "fields": [],
+   "text": "tilted [DIRECTION]?"
+  },
+  "microbit_getTiltAngle": {
+   "ext": "microbit",
+   "opcode": "microbit_getTiltAngle",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "DIRECTION",
+     "type": "str",
+     "menu": "tiltDirection",
+     "shadow": "microbit_menu_tiltDirection",
+     "shadowField": "tiltDirection"
+    }
+   ],
+   "fields": [],
+   "text": "tilt angle [DIRECTION]"
+  },
+  "microbit_whenPinConnected": {
+   "ext": "microbit",
+   "opcode": "microbit_whenPinConnected",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "PIN",
+     "type": "str",
+     "menu": "touchPins",
+     "shadow": "microbit_menu_touchPins",
+     "shadowField": "touchPins"
+    }
+   ],
+   "fields": [],
+   "text": "when pin [PIN] connected"
+  },
+  "music_playDrumForBeats": {
+   "ext": "music",
+   "opcode": "music_playDrumForBeats",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "DRUM",
+     "type": "num",
+     "menu": "DRUM",
+     "shadow": "music_menu_DRUM",
+     "shadowField": "DRUM"
+    },
+    {
+     "name": "BEATS",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "play drum [DRUM] for [BEATS] beats"
+  },
+  "music_midiPlayDrumForBeats": {
+   "ext": "music",
+   "opcode": "music_midiPlayDrumForBeats",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "DRUM",
+     "type": "num",
+     "menu": "DRUM",
+     "shadow": "music_menu_DRUM",
+     "shadowField": "DRUM"
+    },
+    {
+     "name": "BEATS",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "play drum [DRUM] for [BEATS] beats"
+  },
+  "music_restForBeats": {
+   "ext": "music",
+   "opcode": "music_restForBeats",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "BEATS",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "rest for [BEATS] beats"
+  },
+  "music_playNoteForBeats": {
+   "ext": "music",
+   "opcode": "music_playNoteForBeats",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "NOTE",
+     "type": "any"
+    },
+    {
+     "name": "BEATS",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "play note [NOTE] for [BEATS] beats"
+  },
+  "music_setInstrument": {
+   "ext": "music",
+   "opcode": "music_setInstrument",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "INSTRUMENT",
+     "type": "num",
+     "menu": "INSTRUMENT",
+     "shadow": "music_menu_INSTRUMENT",
+     "shadowField": "INSTRUMENT"
+    }
+   ],
+   "fields": [],
+   "text": "set instrument to [INSTRUMENT]"
+  },
+  "music_midiSetInstrument": {
+   "ext": "music",
+   "opcode": "music_midiSetInstrument",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "INSTRUMENT",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set instrument to [INSTRUMENT]"
+  },
+  "music_setTempo": {
+   "ext": "music",
+   "opcode": "music_setTempo",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "TEMPO",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set tempo to [TEMPO]"
+  },
+  "music_changeTempo": {
+   "ext": "music",
+   "opcode": "music_changeTempo",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "TEMPO",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change tempo by [TEMPO]"
+  },
+  "music_getTempo": {
+   "ext": "music",
+   "opcode": "music_getTempo",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "tempo"
+  },
+  "pen_clear": {
+   "ext": "pen",
+   "opcode": "pen_clear",
+   "kind": "statement",
+   "inputs": [],
+   "fields": [],
+   "text": "erase all"
+  },
+  "pen_stamp": {
+   "ext": "pen",
+   "opcode": "pen_stamp",
+   "kind": "statement",
+   "inputs": [],
+   "fields": [],
+   "text": "stamp"
+  },
+  "pen_penDown": {
+   "ext": "pen",
+   "opcode": "pen_penDown",
+   "kind": "statement",
+   "inputs": [],
+   "fields": [],
+   "text": "pen down"
+  },
+  "pen_penUp": {
+   "ext": "pen",
+   "opcode": "pen_penUp",
+   "kind": "statement",
+   "inputs": [],
+   "fields": [],
+   "text": "pen up"
+  },
+  "pen_setPenColorToColor": {
+   "ext": "pen",
+   "opcode": "pen_setPenColorToColor",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "COLOR",
+     "type": "color"
+    }
+   ],
+   "fields": [],
+   "text": "set pen color to [COLOR]"
+  },
+  "pen_changePenColorParamBy": {
+   "ext": "pen",
+   "opcode": "pen_changePenColorParamBy",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "COLOR_PARAM",
+     "type": "str",
+     "menu": "colorParam",
+     "shadow": "pen_menu_colorParam",
+     "shadowField": "colorParam"
+    },
+    {
+     "name": "VALUE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change pen [COLOR_PARAM] by [VALUE]"
+  },
+  "pen_setPenColorParamTo": {
+   "ext": "pen",
+   "opcode": "pen_setPenColorParamTo",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "COLOR_PARAM",
+     "type": "str",
+     "menu": "colorParam",
+     "shadow": "pen_menu_colorParam",
+     "shadowField": "colorParam"
+    },
+    {
+     "name": "VALUE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set pen [COLOR_PARAM] to [VALUE]"
+  },
+  "pen_changePenSizeBy": {
+   "ext": "pen",
+   "opcode": "pen_changePenSizeBy",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "SIZE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change pen size by [SIZE]"
+  },
+  "pen_setPenSizeTo": {
+   "ext": "pen",
+   "opcode": "pen_setPenSizeTo",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "SIZE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set pen size to [SIZE]"
+  },
+  "pen_setPenShadeToNumber": {
+   "ext": "pen",
+   "opcode": "pen_setPenShadeToNumber",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "SHADE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set pen shade to [SHADE]"
+  },
+  "pen_changePenShadeBy": {
+   "ext": "pen",
+   "opcode": "pen_changePenShadeBy",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "SHADE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change pen shade by [SHADE]"
+  },
+  "pen_setPenHueToNumber": {
+   "ext": "pen",
+   "opcode": "pen_setPenHueToNumber",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "HUE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set pen color to [HUE]"
+  },
+  "pen_changePenHueBy": {
+   "ext": "pen",
+   "opcode": "pen_changePenHueBy",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "HUE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change pen color by [HUE]"
+  },
+  "speech2text_listenAndWait": {
+   "ext": "speech2text",
+   "opcode": "speech2text_listenAndWait",
+   "kind": "statement",
+   "inputs": [],
+   "fields": [],
+   "text": "listen and wait"
+  },
+  "speech2text_whenIHearHat": {
+   "ext": "speech2text",
+   "opcode": "speech2text_whenIHearHat",
+   "kind": "hat",
+   "inputs": [],
+   "fields": [],
+   "text": "when I hear [PHRASE]"
+  },
+  "speech2text_getSpeech": {
+   "ext": "speech2text",
+   "opcode": "speech2text_getSpeech",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "speech"
+  },
+  "text2speech_speakAndWait": {
+   "ext": "text2speech",
+   "opcode": "text2speech_speakAndWait",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "WORDS",
+     "type": "str"
+    }
+   ],
+   "fields": [],
+   "text": "speak [WORDS]"
+  },
+  "text2speech_setVoice": {
+   "ext": "text2speech",
+   "opcode": "text2speech_setVoice",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "VOICE",
+     "type": "str",
+     "menu": "voices",
+     "shadow": "text2speech_menu_voices",
+     "shadowField": "voices"
+    }
+   ],
+   "fields": [],
+   "text": "set voice to [VOICE]"
+  },
+  "text2speech_setLanguage": {
+   "ext": "text2speech",
+   "opcode": "text2speech_setLanguage",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "LANGUAGE",
+     "type": "str",
+     "menu": "languages",
+     "shadow": "text2speech_menu_languages",
+     "shadowField": "languages"
+    }
+   ],
+   "fields": [],
+   "text": "set language to [LANGUAGE]"
+  },
+  "translate_getTranslate": {
+   "ext": "translate",
+   "opcode": "translate_getTranslate",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "LANGUAGE",
+     "type": "str",
+     "menu": "languages",
+     "shadow": "translate_menu_languages",
+     "shadowField": "languages"
+    }
+   ],
+   "fields": [],
+   "text": "translate [WORDS] to [LANGUAGE]"
+  },
+  "translate_getViewerLanguage": {
+   "ext": "translate",
+   "opcode": "translate_getViewerLanguage",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "language"
+  },
+  "videoSensing_whenMotionGreaterThan": {
+   "ext": "videoSensing",
+   "opcode": "videoSensing_whenMotionGreaterThan",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "REFERENCE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "when video motion > [REFERENCE]"
+  },
+  "videoSensing_videoOn": {
+   "ext": "videoSensing",
+   "opcode": "videoSensing_videoOn",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "ATTRIBUTE",
+     "type": "num",
+     "menu": "ATTRIBUTE",
+     "shadow": "videoSensing_menu_ATTRIBUTE",
+     "shadowField": "ATTRIBUTE"
+    },
+    {
+     "name": "SUBJECT",
+     "type": "num",
+     "menu": "SUBJECT",
+     "shadow": "videoSensing_menu_SUBJECT",
+     "shadowField": "SUBJECT"
+    }
+   ],
+   "fields": [],
+   "text": "video [ATTRIBUTE] on [SUBJECT]"
+  },
+  "videoSensing_videoToggle": {
+   "ext": "videoSensing",
+   "opcode": "videoSensing_videoToggle",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "VIDEO_STATE",
+     "type": "num",
+     "menu": "VIDEO_STATE",
+     "shadow": "videoSensing_menu_VIDEO_STATE",
+     "shadowField": "VIDEO_STATE"
+    }
+   ],
+   "fields": [],
+   "text": "turn video [VIDEO_STATE]"
+  },
+  "videoSensing_setVideoTransparency": {
+   "ext": "videoSensing",
+   "opcode": "videoSensing_setVideoTransparency",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "TRANSPARENCY",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set video transparency to [TRANSPARENCY]"
+  },
+  "wedo2_motorOnFor": {
+   "ext": "wedo2",
+   "opcode": "wedo2_motorOnFor",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "wedo2_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    },
+    {
+     "name": "DURATION",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "turn [MOTOR_ID] on for [DURATION] seconds"
+  },
+  "wedo2_motorOn": {
+   "ext": "wedo2",
+   "opcode": "wedo2_motorOn",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "wedo2_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    }
+   ],
+   "fields": [],
+   "text": "turn [MOTOR_ID] on"
+  },
+  "wedo2_motorOff": {
+   "ext": "wedo2",
+   "opcode": "wedo2_motorOff",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "wedo2_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    }
+   ],
+   "fields": [],
+   "text": "turn [MOTOR_ID] off"
+  },
+  "wedo2_startMotorPower": {
+   "ext": "wedo2",
+   "opcode": "wedo2_startMotorPower",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "wedo2_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    },
+    {
+     "name": "POWER",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set [MOTOR_ID] power to [POWER]"
+  },
+  "wedo2_setMotorDirection": {
+   "ext": "wedo2",
+   "opcode": "wedo2_setMotorDirection",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "MOTOR_ID",
+     "type": "str",
+     "menu": "MOTOR_ID",
+     "shadow": "wedo2_menu_MOTOR_ID",
+     "shadowField": "MOTOR_ID"
+    },
+    {
+     "name": "MOTOR_DIRECTION",
+     "type": "str",
+     "menu": "MOTOR_DIRECTION",
+     "shadow": "wedo2_menu_MOTOR_DIRECTION",
+     "shadowField": "MOTOR_DIRECTION"
+    }
+   ],
+   "fields": [],
+   "text": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]"
+  },
+  "wedo2_setLightHue": {
+   "ext": "wedo2",
+   "opcode": "wedo2_setLightHue",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "HUE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set light color to [HUE]"
+  },
+  "wedo2_playNoteFor": {
+   "ext": "wedo2",
+   "opcode": "wedo2_playNoteFor",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "NOTE",
+     "type": "num"
+    },
+    {
+     "name": "DURATION",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "play note [NOTE] for [DURATION] seconds"
+  },
+  "wedo2_whenDistance": {
+   "ext": "wedo2",
+   "opcode": "wedo2_whenDistance",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "OP",
+     "type": "str",
+     "menu": "OP",
+     "shadow": "wedo2_menu_OP",
+     "shadowField": "OP"
+    },
+    {
+     "name": "REFERENCE",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "when distance [OP] [REFERENCE]"
+  },
+  "wedo2_whenTilted": {
+   "ext": "wedo2",
+   "opcode": "wedo2_whenTilted",
+   "kind": "hat",
+   "inputs": [
+    {
+     "name": "TILT_DIRECTION_ANY",
+     "type": "str",
+     "menu": "TILT_DIRECTION_ANY",
+     "shadow": "wedo2_menu_TILT_DIRECTION_ANY",
+     "shadowField": "TILT_DIRECTION_ANY"
+    }
+   ],
+   "fields": [],
+   "text": "when tilted [TILT_DIRECTION_ANY]"
+  },
+  "wedo2_getDistance": {
+   "ext": "wedo2",
+   "opcode": "wedo2_getDistance",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "distance"
+  },
+  "wedo2_isTilted": {
+   "ext": "wedo2",
+   "opcode": "wedo2_isTilted",
+   "kind": "boolean",
+   "inputs": [
+    {
+     "name": "TILT_DIRECTION_ANY",
+     "type": "str",
+     "menu": "TILT_DIRECTION_ANY",
+     "shadow": "wedo2_menu_TILT_DIRECTION_ANY",
+     "shadowField": "TILT_DIRECTION_ANY"
+    }
+   ],
+   "fields": [],
+   "text": "tilted [TILT_DIRECTION_ANY]?"
+  },
+  "wedo2_getTiltAngle": {
+   "ext": "wedo2",
+   "opcode": "wedo2_getTiltAngle",
+   "kind": "reporter",
+   "inputs": [
+    {
+     "name": "TILT_DIRECTION",
+     "type": "str",
+     "menu": "TILT_DIRECTION",
+     "shadow": "wedo2_menu_TILT_DIRECTION",
+     "shadowField": "TILT_DIRECTION"
+    }
+   ],
+   "fields": [],
+   "text": "tilt angle [TILT_DIRECTION]"
+  },
+  "stretch_setStretch": {
+   "ext": "stretch",
+   "opcode": "stretch_setStretch",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "X",
+     "type": "num"
+    },
+    {
+     "name": "Y",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set stretch to x: [X] y: [Y]"
+  },
+  "stretch_changeStretch": {
+   "ext": "stretch",
+   "opcode": "stretch_changeStretch",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "DX",
+     "type": "num"
+    },
+    {
+     "name": "DY",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change stretch by x: [DX] y: [DY]"
+  },
+  "stretch_setStretchX": {
+   "ext": "stretch",
+   "opcode": "stretch_setStretchX",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "X",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set stretch x to [X]"
+  },
+  "stretch_setStretchY": {
+   "ext": "stretch",
+   "opcode": "stretch_setStretchY",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "Y",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "set stretch y to [Y]"
+  },
+  "stretch_changeStretchX": {
+   "ext": "stretch",
+   "opcode": "stretch_changeStretchX",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "DX",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change stretch x by [DX]"
+  },
+  "stretch_changeStretchY": {
+   "ext": "stretch",
+   "opcode": "stretch_changeStretchY",
+   "kind": "statement",
+   "inputs": [
+    {
+     "name": "DY",
+     "type": "num"
+    }
+   ],
+   "fields": [],
+   "text": "change stretch y by [DY]"
+  },
+  "stretch_getX": {
+   "ext": "stretch",
+   "opcode": "stretch_getX",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "x stretch"
+  },
+  "stretch_getY": {
+   "ext": "stretch",
+   "opcode": "stretch_getY",
+   "kind": "reporter",
+   "inputs": [],
+   "fields": [],
+   "text": "y stretch"
+  }
+ }
+}

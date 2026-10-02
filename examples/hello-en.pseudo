@@ -1,0 +1,49 @@
+# English example: global/private vars, list, custom block, broadcast, clones
+global score = 0
+global message = "hello"
+
+sprite ball:
+  var height = 180
+  var speed = 0
+  private lastHeight
+  list trail
+
+  def step(gravity: num):
+    speed = speed + gravity
+    height = height - speed
+    if (height < 0):
+      height = 0 - height
+      speed = 0 - (speed * 0.8)
+    lastHeight = height
+    add to list(height, trail)
+    score = score + 1
+
+  when green flag clicked:
+    show
+    goto xy(0, 80)
+    reset timer
+    forever:
+      step(1)
+      goto xy(x position, height - 100)
+      wait (0.05)
+    broadcast("end")
+
+  when I receive("end"):
+    say(join("landed ", timer))
+
+  when key pressed("space"):
+    create clone myself
+
+sprite shadow:
+  var count = 0
+
+  when start as clone:
+    count = count + 1
+    goto xy(pick random(-200, 200), y position)
+    if (touching("edge")):
+      hide
+
+stage:
+  when green flag clicked:
+    hide variable(score)
+    show variable(height)

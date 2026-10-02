@@ -1,0 +1,165 @@
+# Snake: arrow keys / WASD to steer, eat the red dot to grow, game over on a wall or on yourself
+# English twin of examples/贪吃蛇.pseudo - same program, English aliases and identifiers.
+# Field is a 17x11 grid (cell side 24 px, cell coords -8..8 x -5..5)
+# The whole body lives in one list: every cell is encoded as (gx + 20) * 100 + (gy + 20),
+# so "list contains" alone is the duplicate check
+# The body is drawn with a clone pool, not with the pen stamp: the pen layer is a bitmap
+# and stamp would rasterise the SVG costume
+# Keep every asset SVG - Scratch re-encodes bitmaps and loses quality
+
+global score = 0
+
+sprite snake:
+  costume "assets/head.svg"
+  list body
+  var cell = 24
+  var headX = 0
+  var headY = 0
+  var dx = 1
+  var dy = 0
+  var nextDx = 1
+  var nextDy = 0
+  var foodX = 5
+  var foodY = 0
+  var ate = 0
+  var speed = 0.18
+
+  def placeFood warp:
+    foodX = pick random(-8, 8)
+    foodY = pick random(-5, 5)
+    repeat until (not(list contains(body, (foodX + 20) * 100 + (foodY + 20)))):
+      foodX = pick random(-8, 8)
+      foodY = pick random(-5, 5)
+
+  def endGame:
+    say(join(join("Game over! Score ", score), "  click the green flag to retry"))
+    wait (2)
+    stop("all")
+
+  when green flag clicked:
+    show
+    go to front back(front)
+    delete all of(body)
+    score = 0
+    speed = 0.18
+    headX = 0
+    headY = 0
+    dx = 1
+    dy = 0
+    nextDx = 1
+    nextDy = 0
+    add to list((0 + 20) * 100 + (0 + 20), body)
+    add to list((-1 + 20) * 100 + (0 + 20), body)
+    add to list((-2 + 20) * 100 + (0 + 20), body)
+    placeFood()
+    goto xy(headX * cell, headY * cell)
+    broadcast("refresh")
+    say for("Steer with the arrow keys or WASD, eat the red dot to grow", 1.2)
+    forever:
+      dx = nextDx
+      dy = nextDy
+      headX = headX + dx
+      headY = headY + dy
+      if (or(mathop(abs, headX) > 8, mathop(abs, headY) > 5)):
+        endGame()
+      ate = 0
+      if (and(headX = foodX, headY = foodY)):
+        ate = 1
+      else:
+        delete of list("last", body)
+      if (list contains(body, (headX + 20) * 100 + (headY + 20))):
+        endGame()
+      insert at of list(1, (headX + 20) * 100 + (headY + 20), body)
+      if (ate = 1):
+        score = score + 1
+        if (speed > 0.09):
+          speed = speed - 0.01
+        placeFood()
+      goto xy(headX * cell, headY * cell)
+      broadcast("refresh")
+      wait (speed)
+
+  when key pressed("up arrow"):
+    if (dy != -1):
+      nextDx = 0
+      nextDy = 1
+
+  when key pressed("w"):
+    if (dy != -1):
+      nextDx = 0
+      nextDy = 1
+
+  when key pressed("down arrow"):
+    if (dy != 1):
+      nextDx = 0
+      nextDy = -1
+
+  when key pressed("s"):
+    if (dy != 1):
+      nextDx = 0
+      nextDy = -1
+
+  when key pressed("left arrow"):
+    if (dx != 1):
+      nextDx = -1
+      nextDy = 0
+
+  when key pressed("a"):
+    if (dx != 1):
+      nextDx = -1
+      nextDy = 0
+
+  when key pressed("right arrow"):
+    if (dx != -1):
+      nextDx = 1
+      nextDy = 0
+
+  when key pressed("d"):
+    if (dx != -1):
+      nextDx = 1
+      nextDy = 0
+
+sprite bodyPart:
+  costume "assets/body.svg"
+  private seg = 0
+  private isClone = 0
+  private posCode = 0
+
+  def fillClones warp:
+    repeat (length of list(body) - 1 - seg):
+      seg = seg + 1
+      create clone myself
+
+  when green flag clicked:
+    hide
+    isClone = 0
+    seg = 0
+    forever:
+      fillClones()
+      wait (0.05)
+
+  when start as clone:
+    isClone = 1
+
+  when I receive("refresh"):
+    if (and(isClone = 1, seg + 1 <= length of list(body))):
+      posCode = item of list(seg + 1, body)
+      goto xy((mathop(floor, posCode / 100) - 20) * cell, (mod(posCode, 100) - 20) * cell)
+      show
+    else:
+      hide
+
+sprite food:
+  costume "assets/food.svg"
+
+  when green flag clicked:
+    goto xy(foodX * cell, foodY * cell)
+
+  when I receive("refresh"):
+    goto xy(foodX * cell, foodY * cell)
+
+stage:
+  backdrop "assets/field.svg"
+
+  when green flag clicked:
+    show variable(score)

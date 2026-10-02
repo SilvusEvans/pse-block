@@ -1,0 +1,22 @@
+# Dependencies
+/node_modules/
+
+# Build output (electron-builder). Anchored with a leading slash on purpose: a bare `dist/`
+# also matches at every depth and would swallow the vendored third-party bundles under
+# .ref/**/dist/, which are the ground truth the catalog is extracted from.
+/dist/
+/dist-*/
+
+# Scratch space
+/out/
+/tmp/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

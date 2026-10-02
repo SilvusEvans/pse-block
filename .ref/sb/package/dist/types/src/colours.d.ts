@@ -1,0 +1,35 @@
+declare const Colours: {
+    text: string;
+    workspace: string;
+    toolboxHover: string;
+    toolboxSelected: string;
+    toolboxText: string;
+    toolbox: string;
+    flyout: string;
+    scrollbar: string;
+    scrollbarHover: string;
+    textField: string;
+    textFieldText: string;
+    insertionMarker: string;
+    insertionMarkerOpacity: number;
+    dragShadowOpacity: number;
+    stackGlow: string;
+    stackGlowSize: number;
+    stackGlowOpacity: number;
+    replacementGlow: string;
+    replacementGlowSize: number;
+    replacementGlowOpacity: number;
+    colourPickerStroke: string;
+    fieldShadow: string;
+    dropDownShadow: string;
+    numPadBackground: string;
+    numPadBorder: string;
+    numPadActiveBackground: string;
+    numPadText: string;
+    valueReportBackground: string;
+    valueReportBorder: string;
+    contextualMenuHover: string;
+    menuHover: string;
+};
+export { Colours };
+//# sourceMappingURL=colours.d.ts.map

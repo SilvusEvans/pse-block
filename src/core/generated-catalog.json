@@ -1,0 +1,4047 @@
+{
+ "generatedAt": "2026-10-02T09:57:12.292Z",
+ "source": "scratch-blocks@2.1.24",
+ "counts": {
+  "c-block-end": 1,
+  "c-block": 7,
+  "statement": 72,
+  "hat": 9,
+  "dynamic-menu": 12,
+  "cap": 1,
+  "reporter": 48,
+  "boolean": 17
+ },
+ "blocks": {
+  "control_forever": {
+   "kind": "c-block-end",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "fieldType": "image",
+     "options": []
+    }
+   ],
+   "msgKey": "CONTROL_FOREVER",
+   "enText": "forever",
+   "aliases": "forever",
+   "extensions": [
+    "colours_control",
+    "shape_end"
+   ]
+  },
+  "control_repeat": {
+   "kind": "c-block",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "TIMES",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "fieldType": "image",
+     "options": []
+    }
+   ],
+   "msgKey": "CONTROL_REPEAT",
+   "enText": "repeat %1",
+   "aliases": "repeat",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_if": {
+   "kind": "c-block",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "CONDITION",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "CONTROL_IF",
+   "enText": "if %1 then",
+   "aliases": "if then",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_if_else": {
+   "kind": "c-block",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "CONDITION",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "CONTROL_IF",
+   "enText": "if %1 then",
+   "aliases": "if then",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_stop": {
+   "kind": "statement",
+   "category": "control",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "STOP_OPTION",
+     "fieldType": "dropdown",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "previousStatement": ""
+  },
+  "control_wait": {
+   "kind": "statement",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "DURATION",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "CONTROL_WAIT",
+   "enText": "wait %1 seconds",
+   "aliases": "wait seconds",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_wait_until": {
+   "kind": "statement",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "CONDITION",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "CONTROL_WAITUNTIL",
+   "enText": "wait until %1",
+   "aliases": "wait until",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_repeat_until": {
+   "kind": "c-block",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "CONDITION",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "fieldType": "image",
+     "options": []
+    }
+   ],
+   "msgKey": "CONTROL_REPEATUNTIL",
+   "enText": "repeat until %1",
+   "aliases": "repeat until",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_while": {
+   "kind": "c-block",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "CONDITION",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "fieldType": "image",
+     "options": []
+    }
+   ],
+   "msgKey": "CONTROL_WHILE",
+   "enText": "while %1",
+   "aliases": "while",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_for_each": {
+   "kind": "c-block",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "VARIABLE",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "CONTROL_FOREACH",
+   "enText": "for each %1 in %2",
+   "aliases": "for each in",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_start_as_clone": {
+   "kind": "hat",
+   "category": "control",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "CONTROL_STARTASCLONE",
+   "enText": "when I start as a clone",
+   "aliases": "when i start as a clone",
+   "extensions": [
+    "colours_control",
+    "shape_hat"
+   ]
+  },
+  "control_create_clone_of_menu": {
+   "kind": "dynamic-menu",
+   "category": "control",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "control_create_clone_of": {
+   "kind": "statement",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "CLONE_OPTION",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "CONTROL_CREATECLONEOF",
+   "enText": "create clone of %1",
+   "aliases": "create clone of",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_delete_this_clone": {
+   "kind": "cap",
+   "category": "control",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "CONTROL_DELETETHISCLONE",
+   "enText": "delete this clone",
+   "aliases": "delete this clone",
+   "extensions": [
+    "colours_control",
+    "shape_end"
+   ]
+  },
+  "control_get_counter": {
+   "kind": "reporter",
+   "category": "control",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "CONTROL_COUNTER",
+   "enText": "counter",
+   "aliases": "counter",
+   "extensions": [
+    "colours_control",
+    "output_number"
+   ]
+  },
+  "control_incr_counter": {
+   "kind": "statement",
+   "category": "control",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "CONTROL_INCRCOUNTER",
+   "enText": "increment counter",
+   "aliases": "increment counter",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_clear_counter": {
+   "kind": "statement",
+   "category": "control",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "CONTROL_CLEARCOUNTER",
+   "enText": "clear counter",
+   "aliases": "clear counter",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "control_all_at_once": {
+   "kind": "c-block",
+   "category": "control",
+   "inputs": [
+    {
+     "name": "SUBSTACK",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "CONTROL_ALLATONCE",
+   "enText": "all at once",
+   "aliases": "all at once",
+   "extensions": [
+    "colours_control",
+    "shape_statement"
+   ]
+  },
+  "data_variable": {
+   "kind": "reporter",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "VARIABLE",
+     "fieldType": "variable_getter",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "contextMenu_getVariableBlock",
+    "colours_data",
+    "output_string",
+    "monitor_block"
+   ]
+  },
+  "data_setvariableto": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "VARIABLE",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_SETVARIABLETO",
+   "enText": "set %1 to %2",
+   "aliases": "set to",
+   "extensions": [
+    "colours_data",
+    "shape_statement"
+   ]
+  },
+  "data_changevariableby": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "VARIABLE",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_CHANGEVARIABLEBY",
+   "enText": "change %1 by %2",
+   "aliases": "change by",
+   "extensions": [
+    "colours_data",
+    "shape_statement"
+   ]
+  },
+  "data_showvariable": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "VARIABLE",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_SHOWVARIABLE",
+   "enText": "show variable %1",
+   "aliases": "show variable",
+   "extensions": [
+    "colours_data"
+   ],
+   "previousStatement": "null"
+  },
+  "data_hidevariable": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "VARIABLE",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_HIDEVARIABLE",
+   "enText": "hide variable %1",
+   "aliases": "hide variable",
+   "extensions": [
+    "colours_data"
+   ],
+   "previousStatement": "null"
+  },
+  "data_listcontents": {
+   "kind": "reporter",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable_getter",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "contextMenu_getListBlock",
+    "colours_data_lists",
+    "output_string",
+    "monitor_block"
+   ]
+  },
+  "data_listindexall": {
+   "kind": "reporter",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "INDEX",
+     "fieldType": "numberdropdown",
+     "options": [
+      {
+       "value": "1",
+       "msgKey": null,
+       "en": "1"
+      },
+      {
+       "value": "last",
+       "msgKey": "DATA_INDEX_LAST",
+       "en": "last"
+      },
+      {
+       "value": "all",
+       "msgKey": "DATA_INDEX_ALL",
+       "en": "all"
+      }
+     ]
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield",
+    "output_string"
+   ]
+  },
+  "data_listindexrandom": {
+   "kind": "reporter",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "INDEX",
+     "fieldType": "numberdropdown",
+     "options": [
+      {
+       "value": "1",
+       "msgKey": null,
+       "en": "1"
+      },
+      {
+       "value": "last",
+       "msgKey": "DATA_INDEX_LAST",
+       "en": "last"
+      },
+      {
+       "value": "random",
+       "msgKey": "DATA_INDEX_RANDOM",
+       "en": "random"
+      }
+     ]
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield",
+    "output_string"
+   ]
+  },
+  "data_addtolist": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "ITEM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_ADDTOLIST",
+   "enText": "add %1 to %2",
+   "aliases": "add to",
+   "extensions": [
+    "colours_data_lists",
+    "shape_statement"
+   ]
+  },
+  "data_deleteoflist": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "INDEX",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_DELETEOFLIST",
+   "enText": "delete %1 of %2",
+   "aliases": "delete of",
+   "extensions": [
+    "colours_data_lists",
+    "shape_statement"
+   ]
+  },
+  "data_deletealloflist": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_DELETEALLOFLIST",
+   "enText": "delete all of %1",
+   "aliases": "delete all of",
+   "extensions": [
+    "colours_data_lists",
+    "shape_statement"
+   ]
+  },
+  "data_insertatlist": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "ITEM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "INDEX",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_INSERTATLIST",
+   "enText": "insert %1 at %2 of %3",
+   "aliases": "insert at of",
+   "extensions": [
+    "colours_data_lists",
+    "shape_statement"
+   ]
+  },
+  "data_replaceitemoflist": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "INDEX",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "ITEM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_REPLACEITEMOFLIST",
+   "enText": "replace item %1 of %2 with %3",
+   "aliases": "replace item of with",
+   "extensions": [
+    "colours_data_lists",
+    "shape_statement"
+   ]
+  },
+  "data_itemoflist": {
+   "kind": "reporter",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "INDEX",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_ITEMOFLIST",
+   "enText": "item %1 of %2",
+   "aliases": "item of",
+   "extensions": [
+    "colours_data_lists"
+   ],
+   "output": "null"
+  },
+  "data_itemnumoflist": {
+   "kind": "reporter",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "ITEM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_ITEMNUMOFLIST",
+   "enText": "item # of %1 in %2",
+   "aliases": "item # of in",
+   "extensions": [
+    "colours_data_lists"
+   ],
+   "output": "null"
+  },
+  "data_lengthoflist": {
+   "kind": "reporter",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_LENGTHOFLIST",
+   "enText": "length of %1",
+   "aliases": "length of",
+   "extensions": [
+    "colours_data_lists",
+    "output_number"
+   ]
+  },
+  "data_listcontainsitem": {
+   "kind": "boolean",
+   "category": "data",
+   "inputs": [
+    {
+     "name": "ITEM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_LISTCONTAINSITEM",
+   "enText": "%1 contains %2?",
+   "aliases": "contains ?",
+   "extensions": [
+    "colours_data_lists",
+    "output_boolean"
+   ]
+  },
+  "data_showlist": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_SHOWLIST",
+   "enText": "show list %1",
+   "aliases": "show list",
+   "extensions": [
+    "colours_data_lists",
+    "shape_statement"
+   ]
+  },
+  "data_hidelist": {
+   "kind": "statement",
+   "category": "data",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "LIST",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "DATA_HIDELIST",
+   "enText": "hide list %1",
+   "aliases": "hide list",
+   "extensions": [
+    "colours_data_lists",
+    "shape_statement"
+   ]
+  },
+  "event_whentouchingobject": {
+   "kind": "hat",
+   "category": "event",
+   "inputs": [
+    {
+     "name": "TOUCHINGOBJECTMENU",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "EVENT_WHENTOUCHINGOBJECT",
+   "enText": "when this sprite touches %1",
+   "aliases": "when this sprite touches",
+   "extensions": [
+    "colours_event",
+    "shape_hat"
+   ]
+  },
+  "event_touchingobjectmenu": {
+   "kind": "reporter",
+   "category": "event",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "TOUCHINGOBJECTMENU",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "_mouse_",
+       "msgKey": "SENSING_TOUCHINGOBJECT_POINTER",
+       "en": "mouse-pointer"
+      },
+      {
+       "value": "_edge_",
+       "msgKey": "SENSING_TOUCHINGOBJECT_EDGE",
+       "en": "edge"
+      }
+     ]
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_event",
+    "output_string"
+   ]
+  },
+  "event_whenflagclicked": {
+   "kind": "hat",
+   "category": "event",
+   "inputs": [],
+   "fields": [
+    {
+     "fieldType": "image",
+     "options": []
+    }
+   ],
+   "msgKey": "EVENT_WHENFLAGCLICKED",
+   "enText": "when %1 clicked",
+   "aliases": "when clicked",
+   "extensions": [
+    "colours_event",
+    "shape_hat"
+   ]
+  },
+  "event_whenthisspriteclicked": {
+   "kind": "hat",
+   "category": "event",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "EVENT_WHENTHISSPRITECLICKED",
+   "enText": "when this sprite clicked",
+   "aliases": "when this sprite clicked",
+   "extensions": [
+    "colours_event",
+    "shape_hat"
+   ]
+  },
+  "event_whenstageclicked": {
+   "kind": "hat",
+   "category": "event",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "EVENT_WHENSTAGECLICKED",
+   "enText": "when stage clicked",
+   "aliases": "when stage clicked",
+   "extensions": [
+    "colours_event",
+    "shape_hat"
+   ]
+  },
+  "event_whenbroadcastreceived": {
+   "kind": "hat",
+   "category": "event",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "BROADCAST_OPTION",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": "EVENT_WHENBROADCASTRECEIVED",
+   "enText": "when I receive %1",
+   "aliases": "when i receive",
+   "extensions": [
+    "colours_event",
+    "shape_hat"
+   ]
+  },
+  "event_whenbackdropswitchesto": {
+   "kind": "dynamic-menu",
+   "category": "event",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "event_whengreaterthan": {
+   "kind": "hat",
+   "category": "event",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "WHENGREATERTHANMENU",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "LOUDNESS",
+       "msgKey": "EVENT_WHENGREATERTHAN_LOUDNESS",
+       "en": "loudness"
+      },
+      {
+       "value": "TIMER",
+       "msgKey": "EVENT_WHENGREATERTHAN_TIMER",
+       "en": "timer"
+      }
+     ]
+    }
+   ],
+   "msgKey": "EVENT_WHENGREATERTHAN",
+   "enText": "when %1 > %2",
+   "aliases": "when >",
+   "extensions": [
+    "colours_event",
+    "shape_hat"
+   ]
+  },
+  "event_broadcast_menu": {
+   "kind": "reporter",
+   "category": "event",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "BROADCAST_OPTION",
+     "fieldType": "variable",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_event",
+    "output_string"
+   ]
+  },
+  "event_broadcast": {
+   "kind": "statement",
+   "category": "event",
+   "inputs": [
+    {
+     "name": "BROADCAST_INPUT",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "EVENT_BROADCAST",
+   "enText": "broadcast %1",
+   "aliases": "broadcast",
+   "extensions": [
+    "colours_event",
+    "shape_statement"
+   ]
+  },
+  "event_broadcastandwait": {
+   "kind": "statement",
+   "category": "event",
+   "inputs": [
+    {
+     "name": "BROADCAST_INPUT",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "EVENT_BROADCASTANDWAIT",
+   "enText": "broadcast %1 and wait",
+   "aliases": "broadcast and wait",
+   "extensions": [
+    "colours_event",
+    "shape_statement"
+   ]
+  },
+  "event_whenkeypressed": {
+   "kind": "hat",
+   "category": "event",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "KEY_OPTION",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "space",
+       "msgKey": "EVENT_WHENKEYPRESSED_SPACE",
+       "en": "space"
+      },
+      {
+       "value": "up arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_UP",
+       "en": "up arrow"
+      },
+      {
+       "value": "down arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_DOWN",
+       "en": "down arrow"
+      },
+      {
+       "value": "right arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_RIGHT",
+       "en": "right arrow"
+      },
+      {
+       "value": "left arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_LEFT",
+       "en": "left arrow"
+      },
+      {
+       "value": "any",
+       "msgKey": "EVENT_WHENKEYPRESSED_ANY",
+       "en": "any"
+      },
+      {
+       "value": "a",
+       "msgKey": null,
+       "en": "a"
+      },
+      {
+       "value": "b",
+       "msgKey": null,
+       "en": "b"
+      },
+      {
+       "value": "c",
+       "msgKey": null,
+       "en": "c"
+      },
+      {
+       "value": "d",
+       "msgKey": null,
+       "en": "d"
+      },
+      {
+       "value": "e",
+       "msgKey": null,
+       "en": "e"
+      },
+      {
+       "value": "f",
+       "msgKey": null,
+       "en": "f"
+      },
+      {
+       "value": "g",
+       "msgKey": null,
+       "en": "g"
+      },
+      {
+       "value": "h",
+       "msgKey": null,
+       "en": "h"
+      },
+      {
+       "value": "i",
+       "msgKey": null,
+       "en": "i"
+      },
+      {
+       "value": "j",
+       "msgKey": null,
+       "en": "j"
+      },
+      {
+       "value": "k",
+       "msgKey": null,
+       "en": "k"
+      },
+      {
+       "value": "l",
+       "msgKey": null,
+       "en": "l"
+      },
+      {
+       "value": "m",
+       "msgKey": null,
+       "en": "m"
+      },
+      {
+       "value": "n",
+       "msgKey": null,
+       "en": "n"
+      },
+      {
+       "value": "o",
+       "msgKey": null,
+       "en": "o"
+      },
+      {
+       "value": "p",
+       "msgKey": null,
+       "en": "p"
+      },
+      {
+       "value": "q",
+       "msgKey": null,
+       "en": "q"
+      },
+      {
+       "value": "r",
+       "msgKey": null,
+       "en": "r"
+      },
+      {
+       "value": "s",
+       "msgKey": null,
+       "en": "s"
+      },
+      {
+       "value": "t",
+       "msgKey": null,
+       "en": "t"
+      },
+      {
+       "value": "u",
+       "msgKey": null,
+       "en": "u"
+      },
+      {
+       "value": "v",
+       "msgKey": null,
+       "en": "v"
+      },
+      {
+       "value": "w",
+       "msgKey": null,
+       "en": "w"
+      },
+      {
+       "value": "x",
+       "msgKey": null,
+       "en": "x"
+      },
+      {
+       "value": "y",
+       "msgKey": null,
+       "en": "y"
+      },
+      {
+       "value": "z",
+       "msgKey": null,
+       "en": "z"
+      },
+      {
+       "value": "0",
+       "msgKey": null,
+       "en": "0"
+      },
+      {
+       "value": "1",
+       "msgKey": null,
+       "en": "1"
+      },
+      {
+       "value": "2",
+       "msgKey": null,
+       "en": "2"
+      },
+      {
+       "value": "3",
+       "msgKey": null,
+       "en": "3"
+      },
+      {
+       "value": "4",
+       "msgKey": null,
+       "en": "4"
+      },
+      {
+       "value": "5",
+       "msgKey": null,
+       "en": "5"
+      },
+      {
+       "value": "6",
+       "msgKey": null,
+       "en": "6"
+      },
+      {
+       "value": "7",
+       "msgKey": null,
+       "en": "7"
+      },
+      {
+       "value": "8",
+       "msgKey": null,
+       "en": "8"
+      },
+      {
+       "value": "9",
+       "msgKey": null,
+       "en": "9"
+      }
+     ]
+    }
+   ],
+   "msgKey": "EVENT_WHENKEYPRESSED",
+   "enText": "when %1 key pressed",
+   "aliases": "when key pressed",
+   "extensions": [
+    "colours_event",
+    "shape_hat"
+   ]
+  },
+  "looks_sayforsecs": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "MESSAGE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SECS",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_SAYFORSECS",
+   "enText": "say %1 for %2 seconds",
+   "aliases": "say for seconds",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_say": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "MESSAGE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_SAY",
+   "enText": "say %1",
+   "aliases": "say",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_thinkforsecs": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "MESSAGE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "SECS",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_THINKFORSECS",
+   "enText": "think %1 for %2 seconds",
+   "aliases": "think for seconds",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_think": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "MESSAGE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_THINK",
+   "enText": "think %1",
+   "aliases": "think",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_show": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "LOOKS_SHOW",
+   "enText": "show",
+   "aliases": "show",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_hide": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "LOOKS_HIDE",
+   "enText": "hide",
+   "aliases": "hide",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_hideallsprites": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "LOOKS_HIDEALLSPRITES",
+   "enText": "hide all sprites",
+   "aliases": "hide all sprites",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_changeeffectby": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "CHANGE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "EFFECT",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "COLOR",
+       "msgKey": "LOOKS_EFFECT_COLOR",
+       "en": "color"
+      },
+      {
+       "value": "FISHEYE",
+       "msgKey": "LOOKS_EFFECT_FISHEYE",
+       "en": "fisheye"
+      },
+      {
+       "value": "WHIRL",
+       "msgKey": "LOOKS_EFFECT_WHIRL",
+       "en": "whirl"
+      },
+      {
+       "value": "PIXELATE",
+       "msgKey": "LOOKS_EFFECT_PIXELATE",
+       "en": "pixelate"
+      },
+      {
+       "value": "MOSAIC",
+       "msgKey": "LOOKS_EFFECT_MOSAIC",
+       "en": "mosaic"
+      },
+      {
+       "value": "BRIGHTNESS",
+       "msgKey": "LOOKS_EFFECT_BRIGHTNESS",
+       "en": "brightness"
+      },
+      {
+       "value": "GHOST",
+       "msgKey": "LOOKS_EFFECT_GHOST",
+       "en": "ghost"
+      }
+     ]
+    }
+   ],
+   "msgKey": "LOOKS_CHANGEEFFECTBY",
+   "enText": "change %1 effect by %2",
+   "aliases": "change effect by",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_seteffectto": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "EFFECT",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "COLOR",
+       "msgKey": "LOOKS_EFFECT_COLOR",
+       "en": "color"
+      },
+      {
+       "value": "FISHEYE",
+       "msgKey": "LOOKS_EFFECT_FISHEYE",
+       "en": "fisheye"
+      },
+      {
+       "value": "WHIRL",
+       "msgKey": "LOOKS_EFFECT_WHIRL",
+       "en": "whirl"
+      },
+      {
+       "value": "PIXELATE",
+       "msgKey": "LOOKS_EFFECT_PIXELATE",
+       "en": "pixelate"
+      },
+      {
+       "value": "MOSAIC",
+       "msgKey": "LOOKS_EFFECT_MOSAIC",
+       "en": "mosaic"
+      },
+      {
+       "value": "BRIGHTNESS",
+       "msgKey": "LOOKS_EFFECT_BRIGHTNESS",
+       "en": "brightness"
+      },
+      {
+       "value": "GHOST",
+       "msgKey": "LOOKS_EFFECT_GHOST",
+       "en": "ghost"
+      }
+     ]
+    }
+   ],
+   "msgKey": "LOOKS_SETEFFECTTO",
+   "enText": "set %1 effect to %2",
+   "aliases": "set effect to",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_cleargraphiceffects": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "LOOKS_CLEARGRAPHICEFFECTS",
+   "enText": "clear graphic effects",
+   "aliases": "clear graphic effects",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_changesizeby": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "CHANGE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_CHANGESIZEBY",
+   "enText": "change size by %1",
+   "aliases": "change size by",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_setsizeto": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "SIZE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_SETSIZETO",
+   "enText": "set size to %1 %",
+   "aliases": "set size to %",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_size": {
+   "kind": "reporter",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "LOOKS_SIZE",
+   "enText": "size",
+   "aliases": "size",
+   "extensions": [
+    "colours_looks",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "looks_changestretchby": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "CHANGE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_CHANGESTRETCHBY",
+   "enText": "change stretch by %1",
+   "aliases": "change stretch by",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_setstretchto": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "STRETCH",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_SETSTRETCHTO",
+   "enText": "set stretch to %1 %",
+   "aliases": "set stretch to %",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_costume": {
+   "kind": "dynamic-menu",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "looks_switchcostumeto": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "COSTUME",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_SWITCHCOSTUMETO",
+   "enText": "switch costume to %1",
+   "aliases": "switch costume to",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_nextcostume": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "LOOKS_NEXTCOSTUME",
+   "enText": "next costume",
+   "aliases": "next costume",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_switchbackdropto": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "BACKDROP",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_SWITCHBACKDROPTO",
+   "enText": "switch backdrop to %1",
+   "aliases": "switch backdrop to",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_backdrops": {
+   "kind": "dynamic-menu",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "looks_gotofrontback": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "FRONT_BACK",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "front",
+       "msgKey": "LOOKS_GOTOFRONTBACK_FRONT",
+       "en": "front"
+      },
+      {
+       "value": "back",
+       "msgKey": "LOOKS_GOTOFRONTBACK_BACK",
+       "en": "back"
+      }
+     ]
+    }
+   ],
+   "msgKey": "LOOKS_GOTOFRONTBACK",
+   "enText": "go to %1 layer",
+   "aliases": "go to layer",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_goforwardbackwardlayers": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "NUM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "FORWARD_BACKWARD",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "forward",
+       "msgKey": "LOOKS_GOFORWARDBACKWARDLAYERS_FORWARD",
+       "en": "forward"
+      },
+      {
+       "value": "backward",
+       "msgKey": "LOOKS_GOFORWARDBACKWARDLAYERS_BACKWARD",
+       "en": "backward"
+      }
+     ]
+    }
+   ],
+   "msgKey": "LOOKS_GOFORWARDBACKWARDLAYERS",
+   "enText": "go %1 %2 layers",
+   "aliases": "go layers",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_backdropnumbername": {
+   "kind": "reporter",
+   "category": "looks",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "NUMBER_NAME",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "number",
+       "msgKey": "LOOKS_NUMBERNAME_NUMBER",
+       "en": "number"
+      },
+      {
+       "value": "name",
+       "msgKey": "LOOKS_NUMBERNAME_NAME",
+       "en": "name"
+      }
+     ]
+    }
+   ],
+   "msgKey": "LOOKS_BACKDROPNUMBERNAME",
+   "enText": "backdrop %1",
+   "aliases": "backdrop",
+   "extensions": [
+    "colours_looks",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "looks_costumenumbername": {
+   "kind": "reporter",
+   "category": "looks",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "NUMBER_NAME",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "number",
+       "msgKey": "LOOKS_NUMBERNAME_NUMBER",
+       "en": "number"
+      },
+      {
+       "value": "name",
+       "msgKey": "LOOKS_NUMBERNAME_NAME",
+       "en": "name"
+      }
+     ]
+    }
+   ],
+   "msgKey": "LOOKS_COSTUMENUMBERNAME",
+   "enText": "costume %1",
+   "aliases": "costume",
+   "extensions": [
+    "colours_looks",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "looks_switchbackdroptoandwait": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [
+    {
+     "name": "BACKDROP",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "LOOKS_SWITCHBACKDROPTOANDWAIT",
+   "enText": "switch backdrop to %1 and wait",
+   "aliases": "switch backdrop to and wait",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "looks_nextbackdrop": {
+   "kind": "statement",
+   "category": "looks",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "LOOKS_NEXTBACKDROP_BLOCK",
+   "enText": "next backdrop",
+   "aliases": "next backdrop",
+   "extensions": [
+    "colours_looks",
+    "shape_statement"
+   ]
+  },
+  "math_number": {
+   "kind": "reporter",
+   "category": "math",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "NUM",
+     "fieldType": "number",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield"
+   ],
+   "output": "Number"
+  },
+  "math_integer": {
+   "kind": "reporter",
+   "category": "math",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "NUM",
+     "fieldType": "number",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield"
+   ],
+   "output": "Number"
+  },
+  "math_whole_number": {
+   "kind": "reporter",
+   "category": "math",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "NUM",
+     "fieldType": "number",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield"
+   ],
+   "output": "Number"
+  },
+  "math_positive_number": {
+   "kind": "reporter",
+   "category": "math",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "NUM",
+     "fieldType": "number",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield"
+   ],
+   "output": "Number"
+  },
+  "math_angle": {
+   "kind": "reporter",
+   "category": "math",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "NUM",
+     "fieldType": "angle",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield"
+   ],
+   "output": "Number"
+  },
+  "motion_movesteps": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "STEPS",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_MOVESTEPS",
+   "enText": "move %1 steps",
+   "aliases": "move steps",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_turnright": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "DEGREES",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "fieldType": "image",
+     "options": []
+    }
+   ],
+   "msgKey": "MOTION_TURNRIGHT",
+   "enText": "turn %1 %2 degrees",
+   "aliases": "turn degrees",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_turnleft": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "DEGREES",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "fieldType": "image",
+     "options": []
+    }
+   ],
+   "msgKey": "MOTION_TURNLEFT",
+   "enText": "turn %1 %2 degrees",
+   "aliases": "turn degrees",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_pointindirection": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "DIRECTION",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_POINTINDIRECTION",
+   "enText": "point in direction %1",
+   "aliases": "point in direction",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_pointtowards_menu": {
+   "kind": "dynamic-menu",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "motion_pointtowards": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "TOWARDS",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_POINTTOWARDS",
+   "enText": "point towards %1",
+   "aliases": "point towards",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_goto_menu": {
+   "kind": "dynamic-menu",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "motion_gotoxy": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "X",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "Y",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_GOTOXY",
+   "enText": "go to x: %1 y: %2",
+   "aliases": "go to x: y:",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_goto": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "TO",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_GOTO",
+   "enText": "go to %1",
+   "aliases": "go to",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_glidesecstoxy": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "SECS",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "X",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "Y",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_GLIDESECSTOXY",
+   "enText": "glide %1 secs to x: %2 y: %3",
+   "aliases": "glide secs to x: y:",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_glideto_menu": {
+   "kind": "dynamic-menu",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "motion_glideto": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "SECS",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "TO",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_GLIDETO",
+   "enText": "glide %1 secs to %2",
+   "aliases": "glide secs to",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_changexby": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "DX",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_CHANGEXBY",
+   "enText": "change x by %1",
+   "aliases": "change x by",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_setx": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "X",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_SETX",
+   "enText": "set x to %1",
+   "aliases": "set x to",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_changeyby": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "DY",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_CHANGEYBY",
+   "enText": "change y by %1",
+   "aliases": "change y by",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_sety": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "Y",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_SETY",
+   "enText": "set y to %1",
+   "aliases": "set y to",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_ifonedgebounce": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "MOTION_IFONEDGEBOUNCE",
+   "enText": "if on edge, bounce",
+   "aliases": "if on edge, bounce",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_setrotationstyle": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "STYLE",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "left-right",
+       "msgKey": "MOTION_SETROTATIONSTYLE_LEFTRIGHT",
+       "en": "left-right"
+      },
+      {
+       "value": "don't rotate",
+       "msgKey": "MOTION_SETROTATIONSTYLE_DONTROTATE",
+       "en": "don't rotate"
+      },
+      {
+       "value": "all around",
+       "msgKey": "MOTION_SETROTATIONSTYLE_ALLAROUND",
+       "en": "all around"
+      }
+     ]
+    }
+   ],
+   "msgKey": "MOTION_SETROTATIONSTYLE",
+   "enText": "set rotation style %1",
+   "aliases": "set rotation style",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_xposition": {
+   "kind": "reporter",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "MOTION_XPOSITION",
+   "enText": "x position",
+   "aliases": "x position",
+   "extensions": [
+    "colours_motion",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "motion_yposition": {
+   "kind": "reporter",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "MOTION_YPOSITION",
+   "enText": "y position",
+   "aliases": "y position",
+   "extensions": [
+    "colours_motion",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "motion_direction": {
+   "kind": "reporter",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "MOTION_DIRECTION",
+   "enText": "direction",
+   "aliases": "direction",
+   "extensions": [
+    "colours_motion",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "motion_scroll_right": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "DISTANCE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_SCROLLRIGHT",
+   "enText": "scroll right %1",
+   "aliases": "scroll right",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_scroll_up": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [
+    {
+     "name": "DISTANCE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "MOTION_SCROLLUP",
+   "enText": "scroll up %1",
+   "aliases": "scroll up",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_align_scene": {
+   "kind": "statement",
+   "category": "motion",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "ALIGNMENT",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "bottom-left",
+       "msgKey": "MOTION_ALIGNSCENE_BOTTOMLEFT",
+       "en": "bottom-left"
+      },
+      {
+       "value": "bottom-right",
+       "msgKey": "MOTION_ALIGNSCENE_BOTTOMRIGHT",
+       "en": "bottom-right"
+      },
+      {
+       "value": "middle",
+       "msgKey": "MOTION_ALIGNSCENE_MIDDLE",
+       "en": "middle"
+      },
+      {
+       "value": "top-left",
+       "msgKey": "MOTION_ALIGNSCENE_TOPLEFT",
+       "en": "top-left"
+      },
+      {
+       "value": "top-right",
+       "msgKey": "MOTION_ALIGNSCENE_TOPRIGHT",
+       "en": "top-right"
+      }
+     ]
+    }
+   ],
+   "msgKey": "MOTION_ALIGNSCENE",
+   "enText": "align scene %1",
+   "aliases": "align scene",
+   "extensions": [
+    "colours_motion",
+    "shape_statement"
+   ]
+  },
+  "motion_xscroll": {
+   "kind": "reporter",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "MOTION_XSCROLL",
+   "enText": "x scroll",
+   "aliases": "x scroll",
+   "extensions": [
+    "colours_motion",
+    "output_number"
+   ]
+  },
+  "motion_yscroll": {
+   "kind": "reporter",
+   "category": "motion",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "MOTION_YSCROLL",
+   "enText": "y scroll",
+   "aliases": "y scroll",
+   "extensions": [
+    "colours_motion",
+    "output_number"
+   ]
+  },
+  "operator_add": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "NUM1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "NUM2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_ADD",
+   "enText": "%1 + %2",
+   "aliases": "+",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "operator_subtract": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "NUM1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "NUM2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_SUBTRACT",
+   "enText": "%1 - %2",
+   "aliases": "-",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "operator_multiply": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "NUM1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "NUM2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_MULTIPLY",
+   "enText": "%1 * %2",
+   "aliases": "*",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "operator_divide": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "NUM1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "NUM2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_DIVIDE",
+   "enText": "%1 / %2",
+   "aliases": "/",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "operator_random": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "FROM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "TO",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_RANDOM",
+   "enText": "pick random %1 to %2",
+   "aliases": "pick random to",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "operator_lt": {
+   "kind": "boolean",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "OPERAND1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "OPERAND2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_LT",
+   "enText": "%1 < %2",
+   "aliases": "<",
+   "extensions": [
+    "colours_operators",
+    "output_boolean"
+   ]
+  },
+  "operator_equals": {
+   "kind": "boolean",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "OPERAND1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "OPERAND2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_EQUALS",
+   "enText": "%1 = %2",
+   "aliases": "=",
+   "extensions": [
+    "colours_operators",
+    "output_boolean"
+   ]
+  },
+  "operator_gt": {
+   "kind": "boolean",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "OPERAND1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "OPERAND2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_GT",
+   "enText": "%1 > %2",
+   "aliases": ">",
+   "extensions": [
+    "colours_operators",
+    "output_boolean"
+   ]
+  },
+  "operator_and": {
+   "kind": "boolean",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "OPERAND1",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "OPERAND2",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_AND",
+   "enText": "%1 and %2",
+   "aliases": "and",
+   "extensions": [
+    "colours_operators",
+    "output_boolean"
+   ]
+  },
+  "operator_or": {
+   "kind": "boolean",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "OPERAND1",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "OPERAND2",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_OR",
+   "enText": "%1 or %2",
+   "aliases": "or",
+   "extensions": [
+    "colours_operators",
+    "output_boolean"
+   ]
+  },
+  "operator_not": {
+   "kind": "boolean",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "OPERAND",
+     "check": "Boolean",
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_NOT",
+   "enText": "not %1",
+   "aliases": "not",
+   "extensions": [
+    "colours_operators",
+    "output_boolean"
+   ]
+  },
+  "operator_join": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "STRING1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "STRING2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_JOIN",
+   "enText": "join %1 %2",
+   "aliases": "join",
+   "extensions": [
+    "colours_operators",
+    "output_string"
+   ]
+  },
+  "operator_letter_of": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "LETTER",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "STRING",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_LETTEROF",
+   "enText": "letter %1 of %2",
+   "aliases": "letter of",
+   "extensions": [
+    "colours_operators",
+    "output_string"
+   ]
+  },
+  "operator_length": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "STRING",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_LENGTH",
+   "enText": "length of %1",
+   "aliases": "length of",
+   "extensions": [
+    "colours_operators",
+    "output_string"
+   ]
+  },
+  "operator_contains": {
+   "kind": "boolean",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "STRING1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "STRING2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_CONTAINS",
+   "enText": "%1 contains %2?",
+   "aliases": "contains ?",
+   "extensions": [
+    "colours_operators",
+    "output_boolean"
+   ]
+  },
+  "operator_mod": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "NUM1",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "NUM2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_MOD",
+   "enText": "%1 mod %2",
+   "aliases": "mod",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "operator_round": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "NUM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "OPERATORS_ROUND",
+   "enText": "round %1",
+   "aliases": "round",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "operator_mathop": {
+   "kind": "reporter",
+   "category": "operators",
+   "inputs": [
+    {
+     "name": "NUM",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "OPERATOR",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "abs",
+       "msgKey": "OPERATORS_MATHOP_ABS",
+       "en": "abs"
+      },
+      {
+       "value": "floor",
+       "msgKey": "OPERATORS_MATHOP_FLOOR",
+       "en": "floor"
+      },
+      {
+       "value": "ceiling",
+       "msgKey": "OPERATORS_MATHOP_CEILING",
+       "en": "ceiling"
+      },
+      {
+       "value": "sqrt",
+       "msgKey": "OPERATORS_MATHOP_SQRT",
+       "en": "sqrt"
+      },
+      {
+       "value": "sin",
+       "msgKey": "OPERATORS_MATHOP_SIN",
+       "en": "sin"
+      },
+      {
+       "value": "cos",
+       "msgKey": "OPERATORS_MATHOP_COS",
+       "en": "cos"
+      },
+      {
+       "value": "tan",
+       "msgKey": "OPERATORS_MATHOP_TAN",
+       "en": "tan"
+      },
+      {
+       "value": "asin",
+       "msgKey": "OPERATORS_MATHOP_ASIN",
+       "en": "asin"
+      },
+      {
+       "value": "acos",
+       "msgKey": "OPERATORS_MATHOP_ACOS",
+       "en": "acos"
+      },
+      {
+       "value": "atan",
+       "msgKey": "OPERATORS_MATHOP_ATAN",
+       "en": "atan"
+      },
+      {
+       "value": "ln",
+       "msgKey": "OPERATORS_MATHOP_LN",
+       "en": "ln"
+      },
+      {
+       "value": "log",
+       "msgKey": "OPERATORS_MATHOP_LOG",
+       "en": "log"
+      },
+      {
+       "value": "e ^",
+       "msgKey": "OPERATORS_MATHOP_EEXP",
+       "en": "e ^"
+      },
+      {
+       "value": "10 ^",
+       "msgKey": "OPERATORS_MATHOP_10EXP",
+       "en": "10 ^"
+      }
+     ]
+    }
+   ],
+   "msgKey": "OPERATORS_MATHOP",
+   "enText": "%1 of %2",
+   "aliases": "of",
+   "extensions": [
+    "colours_operators",
+    "output_number"
+   ]
+  },
+  "procedures_definition": {
+   "kind": "hat",
+   "category": "procedures",
+   "inputs": [
+    {
+     "name": "custom_block",
+     "check": null,
+     "stmt": true,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "PROCEDURES_DEFINITION",
+   "enText": "define %1",
+   "aliases": "define",
+   "extensions": [
+    "colours_more",
+    "shape_bowler_hat",
+    "procedure_def_contextmenu"
+   ]
+  },
+  "procedures_call": {
+   "kind": "statement",
+   "category": "procedures",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_more",
+    "shape_statement",
+    "procedure_call_contextmenu"
+   ]
+  },
+  "procedures_prototype": {
+   "kind": "statement",
+   "category": "procedures",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_more",
+    "shape_statement"
+   ]
+  },
+  "procedures_declaration": {
+   "kind": "statement",
+   "category": "procedures",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_more",
+    "shape_statement"
+   ]
+  },
+  "argument_reporter_boolean": {
+   "kind": "boolean",
+   "category": "procedures",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "VALUE",
+     "fieldType": "label_serializable",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_more",
+    "output_boolean"
+   ]
+  },
+  "argument_reporter_string_number": {
+   "kind": "reporter",
+   "category": "procedures",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "VALUE",
+     "fieldType": "label_serializable",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_more",
+    "output_number",
+    "output_string"
+   ]
+  },
+  "argument_editor_boolean": {
+   "kind": "boolean",
+   "category": "procedures",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "TEXT",
+     "fieldType": "input_removable",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield",
+    "output_boolean"
+   ]
+  },
+  "argument_editor_string_number": {
+   "kind": "reporter",
+   "category": "procedures",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "TEXT",
+     "fieldType": "input_removable",
+     "options": []
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_textfield",
+    "output_number",
+    "output_string"
+   ]
+  },
+  "sensing_touchingobject": {
+   "kind": "boolean",
+   "category": "sensing",
+   "inputs": [
+    {
+     "name": "TOUCHINGOBJECTMENU",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SENSING_TOUCHINGOBJECT",
+   "enText": "touching %1?",
+   "aliases": "touching ?",
+   "extensions": [
+    "colours_sensing",
+    "output_boolean"
+   ]
+  },
+  "sensing_touchingobjectmenu": {
+   "kind": "dynamic-menu",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "sensing_touchingcolor": {
+   "kind": "boolean",
+   "category": "sensing",
+   "inputs": [
+    {
+     "name": "COLOR",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SENSING_TOUCHINGCOLOR",
+   "enText": "touching color %1?",
+   "aliases": "touching color ?",
+   "extensions": [
+    "colours_sensing",
+    "output_boolean"
+   ]
+  },
+  "sensing_coloristouchingcolor": {
+   "kind": "boolean",
+   "category": "sensing",
+   "inputs": [
+    {
+     "name": "COLOR",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    },
+    {
+     "name": "COLOR2",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SENSING_COLORISTOUCHINGCOLOR",
+   "enText": "color %1 is touching %2?",
+   "aliases": "color is touching ?",
+   "extensions": [
+    "colours_sensing",
+    "output_boolean"
+   ]
+  },
+  "sensing_distanceto": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [
+    {
+     "name": "DISTANCETOMENU",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SENSING_DISTANCETO",
+   "enText": "distance to %1",
+   "aliases": "distance to",
+   "extensions": [
+    "colours_sensing",
+    "output_number"
+   ]
+  },
+  "sensing_distancetomenu": {
+   "kind": "dynamic-menu",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "sensing_askandwait": {
+   "kind": "statement",
+   "category": "sensing",
+   "inputs": [
+    {
+     "name": "QUESTION",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SENSING_ASKANDWAIT",
+   "enText": "ask %1 and wait",
+   "aliases": "ask and wait",
+   "extensions": [
+    "colours_sensing",
+    "shape_statement"
+   ]
+  },
+  "sensing_answer": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_ANSWER",
+   "enText": "answer",
+   "aliases": "answer",
+   "extensions": [
+    "colours_sensing",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "sensing_keypressed": {
+   "kind": "boolean",
+   "category": "sensing",
+   "inputs": [
+    {
+     "name": "KEY_OPTION",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SENSING_KEYPRESSED",
+   "enText": "key %1 pressed?",
+   "aliases": "key pressed?",
+   "extensions": [
+    "colours_sensing",
+    "output_boolean"
+   ]
+  },
+  "sensing_keyoptions": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "KEY_OPTION",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "space",
+       "msgKey": "EVENT_WHENKEYPRESSED_SPACE",
+       "en": "space"
+      },
+      {
+       "value": "up arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_UP",
+       "en": "up arrow"
+      },
+      {
+       "value": "down arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_DOWN",
+       "en": "down arrow"
+      },
+      {
+       "value": "right arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_RIGHT",
+       "en": "right arrow"
+      },
+      {
+       "value": "left arrow",
+       "msgKey": "EVENT_WHENKEYPRESSED_LEFT",
+       "en": "left arrow"
+      },
+      {
+       "value": "any",
+       "msgKey": "EVENT_WHENKEYPRESSED_ANY",
+       "en": "any"
+      },
+      {
+       "value": "a",
+       "msgKey": null,
+       "en": "a"
+      },
+      {
+       "value": "b",
+       "msgKey": null,
+       "en": "b"
+      },
+      {
+       "value": "c",
+       "msgKey": null,
+       "en": "c"
+      },
+      {
+       "value": "d",
+       "msgKey": null,
+       "en": "d"
+      },
+      {
+       "value": "e",
+       "msgKey": null,
+       "en": "e"
+      },
+      {
+       "value": "f",
+       "msgKey": null,
+       "en": "f"
+      },
+      {
+       "value": "g",
+       "msgKey": null,
+       "en": "g"
+      },
+      {
+       "value": "h",
+       "msgKey": null,
+       "en": "h"
+      },
+      {
+       "value": "i",
+       "msgKey": null,
+       "en": "i"
+      },
+      {
+       "value": "j",
+       "msgKey": null,
+       "en": "j"
+      },
+      {
+       "value": "k",
+       "msgKey": null,
+       "en": "k"
+      },
+      {
+       "value": "l",
+       "msgKey": null,
+       "en": "l"
+      },
+      {
+       "value": "m",
+       "msgKey": null,
+       "en": "m"
+      },
+      {
+       "value": "n",
+       "msgKey": null,
+       "en": "n"
+      },
+      {
+       "value": "o",
+       "msgKey": null,
+       "en": "o"
+      },
+      {
+       "value": "p",
+       "msgKey": null,
+       "en": "p"
+      },
+      {
+       "value": "q",
+       "msgKey": null,
+       "en": "q"
+      },
+      {
+       "value": "r",
+       "msgKey": null,
+       "en": "r"
+      },
+      {
+       "value": "s",
+       "msgKey": null,
+       "en": "s"
+      },
+      {
+       "value": "t",
+       "msgKey": null,
+       "en": "t"
+      },
+      {
+       "value": "u",
+       "msgKey": null,
+       "en": "u"
+      },
+      {
+       "value": "v",
+       "msgKey": null,
+       "en": "v"
+      },
+      {
+       "value": "w",
+       "msgKey": null,
+       "en": "w"
+      },
+      {
+       "value": "x",
+       "msgKey": null,
+       "en": "x"
+      },
+      {
+       "value": "y",
+       "msgKey": null,
+       "en": "y"
+      },
+      {
+       "value": "z",
+       "msgKey": null,
+       "en": "z"
+      },
+      {
+       "value": "0",
+       "msgKey": null,
+       "en": "0"
+      },
+      {
+       "value": "1",
+       "msgKey": null,
+       "en": "1"
+      },
+      {
+       "value": "2",
+       "msgKey": null,
+       "en": "2"
+      },
+      {
+       "value": "3",
+       "msgKey": null,
+       "en": "3"
+      },
+      {
+       "value": "4",
+       "msgKey": null,
+       "en": "4"
+      },
+      {
+       "value": "5",
+       "msgKey": null,
+       "en": "5"
+      },
+      {
+       "value": "6",
+       "msgKey": null,
+       "en": "6"
+      },
+      {
+       "value": "7",
+       "msgKey": null,
+       "en": "7"
+      },
+      {
+       "value": "8",
+       "msgKey": null,
+       "en": "8"
+      },
+      {
+       "value": "9",
+       "msgKey": null,
+       "en": "9"
+      }
+     ]
+    }
+   ],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [
+    "colours_sensing",
+    "output_string"
+   ]
+  },
+  "sensing_mousedown": {
+   "kind": "boolean",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_MOUSEDOWN",
+   "enText": "mouse down?",
+   "aliases": "mouse down?",
+   "extensions": [
+    "colours_sensing",
+    "output_boolean"
+   ]
+  },
+  "sensing_mousex": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_MOUSEX",
+   "enText": "mouse x",
+   "aliases": "mouse x",
+   "extensions": [
+    "colours_sensing",
+    "output_number"
+   ]
+  },
+  "sensing_mousey": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_MOUSEY",
+   "enText": "mouse y",
+   "aliases": "mouse y",
+   "extensions": [
+    "colours_sensing",
+    "output_number"
+   ]
+  },
+  "sensing_setdragmode": {
+   "kind": "statement",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "DRAG_MODE",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "draggable",
+       "msgKey": "SENSING_SETDRAGMODE_DRAGGABLE",
+       "en": "draggable"
+      },
+      {
+       "value": "not draggable",
+       "msgKey": "SENSING_SETDRAGMODE_NOTDRAGGABLE",
+       "en": "not draggable"
+      }
+     ]
+    }
+   ],
+   "msgKey": "SENSING_SETDRAGMODE",
+   "enText": "set drag mode %1",
+   "aliases": "set drag mode",
+   "extensions": [
+    "colours_sensing",
+    "shape_statement"
+   ]
+  },
+  "sensing_loudness": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_LOUDNESS",
+   "enText": "loudness",
+   "aliases": "loudness",
+   "extensions": [
+    "colours_sensing",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "sensing_loud": {
+   "kind": "boolean",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_LOUD",
+   "enText": "loud?",
+   "aliases": "loud?",
+   "extensions": [
+    "colours_sensing",
+    "output_boolean"
+   ]
+  },
+  "sensing_timer": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_TIMER",
+   "enText": "timer",
+   "aliases": "timer",
+   "extensions": [
+    "colours_sensing",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "sensing_resettimer": {
+   "kind": "statement",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_RESETTIMER",
+   "enText": "reset timer",
+   "aliases": "reset timer",
+   "extensions": [
+    "colours_sensing",
+    "shape_statement"
+   ]
+  },
+  "sensing_of_object_menu": {
+   "kind": "dynamic-menu",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "sensing_of": {
+   "kind": "dynamic-menu",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "sensing_current": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [
+    {
+     "name": "CURRENTMENU",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "YEAR",
+       "msgKey": "SENSING_CURRENT_YEAR",
+       "en": "year"
+      },
+      {
+       "value": "MONTH",
+       "msgKey": "SENSING_CURRENT_MONTH",
+       "en": "month"
+      },
+      {
+       "value": "DATE",
+       "msgKey": "SENSING_CURRENT_DATE",
+       "en": "date"
+      },
+      {
+       "value": "DAYOFWEEK",
+       "msgKey": "SENSING_CURRENT_DAYOFWEEK",
+       "en": "day of week"
+      },
+      {
+       "value": "HOUR",
+       "msgKey": "SENSING_CURRENT_HOUR",
+       "en": "hour"
+      },
+      {
+       "value": "MINUTE",
+       "msgKey": "SENSING_CURRENT_MINUTE",
+       "en": "minute"
+      },
+      {
+       "value": "SECOND",
+       "msgKey": "SENSING_CURRENT_SECOND",
+       "en": "second"
+      }
+     ]
+    }
+   ],
+   "msgKey": "SENSING_CURRENT",
+   "enText": "current %1",
+   "aliases": "current",
+   "extensions": [
+    "colours_sensing",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "sensing_dayssince2000": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_DAYSSINCE2000",
+   "enText": "days since 2000",
+   "aliases": "days since 2000",
+   "extensions": [
+    "colours_sensing",
+    "output_number"
+   ]
+  },
+  "sensing_online": {
+   "kind": "boolean",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_ONLINE",
+   "enText": "online?",
+   "aliases": "online?",
+   "extensions": [
+    "colours_sensing",
+    "output_boolean",
+    "monitor_block"
+   ]
+  },
+  "sensing_username": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_USERNAME",
+   "enText": "username",
+   "aliases": "username",
+   "extensions": [
+    "colours_sensing",
+    "output_number",
+    "monitor_block"
+   ]
+  },
+  "sensing_userid": {
+   "kind": "reporter",
+   "category": "sensing",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SENSING_USERID",
+   "enText": "user id",
+   "aliases": "user id",
+   "extensions": [
+    "colours_sensing",
+    "output_number"
+   ]
+  },
+  "sound_sounds_menu": {
+   "kind": "dynamic-menu",
+   "category": "sound",
+   "inputs": [],
+   "fields": [],
+   "msgKey": null,
+   "enText": null,
+   "aliases": [],
+   "extensions": [],
+   "dynamic": true
+  },
+  "sound_play": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [
+    {
+     "name": "SOUND_MENU",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SOUND_PLAY",
+   "enText": "start sound %1",
+   "aliases": "start sound",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_playuntildone": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [
+    {
+     "name": "SOUND_MENU",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SOUND_PLAYUNTILDONE",
+   "enText": "play sound %1 until done",
+   "aliases": "play sound until done",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_stopallsounds": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SOUND_STOPALLSOUNDS",
+   "enText": "stop all sounds",
+   "aliases": "stop all sounds",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_seteffectto": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "EFFECT",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "PITCH",
+       "msgKey": "SOUND_EFFECTS_PITCH",
+       "en": "pitch"
+      },
+      {
+       "value": "PAN",
+       "msgKey": "SOUND_EFFECTS_PAN",
+       "en": "pan left/right"
+      }
+     ]
+    }
+   ],
+   "msgKey": "SOUND_SETEFFECTO",
+   "enText": "set %1 effect to %2",
+   "aliases": "set effect to",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_changeeffectby": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [
+    {
+     "name": "EFFECT",
+     "fieldType": "dropdown",
+     "options": [
+      {
+       "value": "PITCH",
+       "msgKey": "SOUND_EFFECTS_PITCH",
+       "en": "pitch"
+      },
+      {
+       "value": "PAN",
+       "msgKey": "SOUND_EFFECTS_PAN",
+       "en": "pan left/right"
+      }
+     ]
+    }
+   ],
+   "msgKey": "SOUND_CHANGEEFFECTBY",
+   "enText": "change %1 effect by %2",
+   "aliases": "change effect by",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_cleareffects": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SOUND_CLEAREFFECTS",
+   "enText": "clear sound effects",
+   "aliases": "clear sound effects",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_changevolumeby": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [
+    {
+     "name": "VOLUME",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SOUND_CHANGEVOLUMEBY",
+   "enText": "change volume by %1",
+   "aliases": "change volume by",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_setvolumeto": {
+   "kind": "statement",
+   "category": "sound",
+   "inputs": [
+    {
+     "name": "VOLUME",
+     "check": null,
+     "stmt": false,
+     "dummy": false
+    }
+   ],
+   "fields": [],
+   "msgKey": "SOUND_SETVOLUMETO",
+   "enText": "set volume to %1%",
+   "aliases": "set volume to %",
+   "extensions": [
+    "colours_sounds",
+    "shape_statement"
+   ]
+  },
+  "sound_volume": {
+   "kind": "reporter",
+   "category": "sound",
+   "inputs": [],
+   "fields": [],
+   "msgKey": "SOUND_VOLUME",
+   "enText": "volume",
+   "aliases": "volume",
+   "extensions": [
+    "colours_sounds",
+    "output_number",
+    "monitor_block"
+   ]
+  }
+ }
+}
