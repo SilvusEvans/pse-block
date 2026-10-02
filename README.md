@@ -8,6 +8,10 @@ advanced Scratch tutorials: the point is to let a learner describe a program in
 text (loops, conditions, custom blocks, clones, lists) and get real, editable
 Scratch blocks back — not a screenshot of blocks, but a project that runs.
 
+**Download:** a prebuilt Windows x64 portable build is on the
+[Releases](https://github.com/SilvusEvans/pse-block/releases) page — no installer, no admin
+rights, just run the `.exe`. Everything below is about building it yourself from source.
+
 ```
 npm install
 npm run start                          # Electron app (loads the examples/ menu)
